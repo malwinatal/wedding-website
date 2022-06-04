@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "wedding-website"
+  "cli": {
+    "analytics": false
+  }
 }
