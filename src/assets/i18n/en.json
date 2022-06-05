@@ -1,0 +1,13 @@
+{
+    "LOGIN": {
+      "WELCOME": "We're happy to annouce that we want you to celebrtate with us!",
+      "NAMES": "Malwina and David",
+      "GETIN": "Get in!",
+      "PASSWORD": "Password"
+    },
+    "NAVBAR": {
+        "SECTION1": "Section1",
+        "SECTION2": "Section2",
+        "SECTION3": "Section3"
+    }
+}
