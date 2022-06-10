@@ -10,6 +10,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { InvitationComponent } from './invitation/invitation.component';
+import { RsvpComponent } from './rsvp/rsvp.component';
+import { LocationComponent } from './location/location.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { PicturesComponent } from './pictures/pictures.component';
+import { CountriesComponent } from './countries/countries.component';
+import { ContactComponent } from './contact/contact.component';
+import { CompaniesComponent } from './companies/companies.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -19,7 +26,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     HomeComponent,
     LoginComponent,
-    InvitationComponent
+    InvitationComponent,
+    RsvpComponent,
+    LocationComponent,
+    ScheduleComponent,
+    PicturesComponent,
+    CountriesComponent,
+    ContactComponent,
+    CompaniesComponent
   ],
   imports: [
     BrowserModule,

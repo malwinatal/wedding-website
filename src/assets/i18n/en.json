@@ -6,8 +6,13 @@
       "PASSWORD": "Password"
     },
     "NAVBAR": {
-        "SECTION1": "Section1",
-        "SECTION2": "Section2",
-        "SECTION3": "Section3"
+        "HOME": "Home",
+        "RSVP": "RSVP",
+        "LOCATION": "Location",
+        "SCHEDULE": "Schedule",
+        "PICTURES": "Pictures",
+        "COUNTRIES": "Our countries",
+        "CONTACT": "Contact",
+        "COMPANIES": "Companies"
     }
 }
