@@ -1,0 +1,25 @@
+{
+    "LOGIN": {
+      "WELCOME": "We're happy to annouce that we want you to celebrtate with us!",
+      "NAMES": "Malwina and David",
+      "GETIN": "Get in!",
+      "PASSWORD": "Password"
+    },
+    "NAVBAR": {
+        "HOME": "Home",
+        "RSVP": "RSVP",
+        "LOCATION": "Location",
+        "SCHEDULE": "Schedule",
+        "PICTURES": "Pictures",
+        "COUNTRIES": "Our countries",
+        "CONTACT": "Contact",
+        "COMPANIES": "Companies"
+    },
+    "INVITATION": {
+      "NAMES": "Malwina and David",
+      "PLACE": "Oczyszczalnia",
+      "DATE": "16th of July 2023",
+      "DEAR": "Dear",
+      "INVITATION": "We're happy to invite you for our wedding!"
+  }
+}
