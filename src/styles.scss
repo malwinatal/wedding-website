@@ -2,32 +2,9 @@
 
 /* You can add global styles to this file, and also import other style files */
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Courier New', monospace;
 
     @media #{$small-and-down} {
-        // styles for small screens and down
-        font-size: 0.75rem !important;
-        h1 {
-            font-size: 3.15rem !important;
-        }
-        h2 {
-            font-size: 2.67rem !important;
-        }
-        h3 {
-            font-size: 2.19rem !important;
-        }
-        h4 {
-            font-size: 1.71rem !important;
-        }
-        h5 {
-            font-size: 1.23rem !important;
-        }
-        h6 {
-            font-size: 0.8625rem !important;
-        }
-    }
-
-    @media #{$medium-and-down} {
         // styles for medium screens and down
         font-size: 0.875rem !important;
         h1 {
@@ -51,7 +28,7 @@ body {
     }
 
     // default
-    @media #{$medium-and-up} {
+    @media #{$medium-and-down} {
         // styles for medium screens and larger
         font-size: 1rem !important;
         h1 {
@@ -74,7 +51,7 @@ body {
         }
     }
 
-    @media #{$large-and-up} {
+    @media #{$medium-and-up} {
         // styles for large screens and up
         font-size: 1.125rem !important;
         h1 {
@@ -97,7 +74,7 @@ body {
         }
     }
 
-    @media #{$extra-large-and-up} {
+    @media #{$large-and-up} {
         // styles for extra large screens and up
         font-size: 1.25rem !important;
         h1 {
@@ -119,4 +96,5 @@ body {
             font-size: 1.44rem !important;
         }
     }
+
 }
