@@ -14,5 +14,12 @@
         "COUNTRIES": "Our countries",
         "CONTACT": "Contact",
         "COMPANIES": "Companies"
-    }
+    },
+    "INVITATION": {
+      "NAMES": "Malwina and David",
+      "PLACE": "Oczyszczalnia",
+      "DATE": "16th of July 2023",
+      "DEAR": "Dear",
+      "INVITATION": "We're happy to invite you for our wedding!"
+  }
 }
