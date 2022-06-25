@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { FloatingActionButton, FloatingActionButtonOptions } from "materialize-css";
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-language-selector',
@@ -8,7 +10,7 @@ import { FloatingActionButton, FloatingActionButtonOptions } from "materialize-c
 })
 export class LanguageSelectorComponent implements OnInit {
 
-  constructor() {
+  constructor(private translate: TranslateService, private cookieService: CookieService) {
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.fixed-action-btn');
       var options: FloatingActionButtonOptions = {
@@ -23,7 +25,8 @@ export class LanguageSelectorComponent implements OnInit {
   ngOnInit(): void {}
 
   setLanguage(language: string): void {
-    console.log(language);
+    this.translate.use(language);
+    this.cookieService.set('lang', language);
   }
 
 }

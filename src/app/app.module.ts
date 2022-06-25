@@ -19,6 +19,8 @@ import { PicturesComponent } from './pictures/pictures.component';
 import { CountriesComponent } from './countries/countries.component';
 import { ContactComponent } from './contact/contact.component';
 import { CompaniesComponent } from './companies/companies.component';
+import { CookieService } from 'ngx-cookie-service';
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -51,7 +53,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       defaultLanguage: 'en',
     })
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

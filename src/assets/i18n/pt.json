@@ -1,0 +1,25 @@
+{
+  "LOGIN": {
+    "WELCOME": "Estamos felizes por anunciar que queremos que celebrem conosco!",
+    "NAMES": "Malwina e David",
+    "GETIN": "Entra!",
+    "PASSWORD": "Senha"
+  },
+  "NAVBAR": {
+      "HOME": "Início",
+      "RSVP": "RSVP",
+      "LOCATION": "Localização",
+      "SCHEDULE": "Programa",
+      "PICTURES": "Fotos",
+      "COUNTRIES": "Países",
+      "CONTACT": "Contactos",
+      "COMPANIES": "Empresas"
+  },
+  "INVITATION": {
+    "NAMES": "Malwina e David",
+    "PLACE": "Oczyszczalnia",
+    "DATE": "16 de Julho de 2023",
+    "DEAR": "Caro",
+    "INVITATION": "Estamos felizes por vos convidar para o nosso casamento!"
+}
+}
