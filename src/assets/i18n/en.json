@@ -1,7 +1,7 @@
 {
     "LOGIN": {
       "WELCOME": "We're happy to annouce that we want you to celebrtate with us!",
-      "NAMES": "Malwina and David",
+      "NAMES": "Malwina & David",
       "GETIN": "Get in!",
       "PASSWORD": "Password",
       "ERROR": "The code typed is not correct!"
@@ -17,9 +17,9 @@
         "COMPANIES": "Companies"
     },
     "INVITATION": {
-      "NAMES": "Malwina and David",
+      "NAMES": "Malwina & David",
       "PLACE": "Oczyszczalnia",
-      "DATE": "16th of July 2023",
+      "DATE": "16th July 2023",
       "DEAR": "Dear",
       "INVITATION": "We're happy to invite you for our wedding!"
   }
