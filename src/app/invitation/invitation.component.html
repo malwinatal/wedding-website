@@ -1,20 +1,25 @@
 <div class="welcome">
     <div  class="cover valign-wrapper">
         <div class="background">
-            <div class="row center-align">
-                <h2 translate="INVITATION.NAMES"></h2>
-            </div>
-            <div class="row center-align">
-                <h5>
-                    <a routerLink="/home" fragment="location" translate="INVITATION.PLACE"></a>
-                    <span> | </span>
-                    <a routerLink="/home" fragment="schedule" translate="INVITATION.DATE"></a>
-                </h5>
+            <div class="container">
+                <h2 class="row center-align">
+                    <div translate="INVITATION.NAMES"></div>
+                </h2>
+    
+                <div class="row center-align">
+                    <h5>
+                        <a routerLink="/home" fragment="location" translate="INVITATION.PLACE"></a>
+                        <span> | </span>
+                        <a routerLink="/home" fragment="schedule" translate="INVITATION.DATE"></a>
+                    </h5>
+                </div>
             </div>
         </div>
     </div>
     <div class="invitation row">
-        <h5><span translate="INVITATION.DEAR"></span><span> {{guest}},</span></h5>
-        <span translate="INVITATION.INVITATION"></span>
+        <div class="container">
+            <h5><span translate="INVITATION.DEAR"></span><span> {{guest}},</span></h5>
+            <span translate="INVITATION.INVITATION"></span>
+        </div>
     </div>
 </div>

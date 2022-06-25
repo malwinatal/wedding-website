@@ -1,14 +1,25 @@
-#background {
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    background: url('../../assets/images/beach.jpg')no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-}
+.login {
+    height: 100vh;
 
-h3 {
-    margin: 0px;
+    #background {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/images/beach.jpg')no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+    
+    h2 {
+        font-weight: bold;
+    }
+
+    .language {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
 }

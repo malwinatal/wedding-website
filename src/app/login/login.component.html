@@ -1,16 +1,27 @@
-<div id="background" class="background responsive-img">
-  <div class="container">
-    <h3 class="flow-text"><span translate="LOGIN.WELCOME"></span></h3>
-    <h1><span translate="LOGIN.NAMES"></span></h1>
-    <div class="row">
-        <div class="input-field col s12">
-            <input id="password" type="password" class="validate">
-            <label for="password"><span translate="LOGIN.PASSWORD"></span></label>
+<div class="login valign-wrapper">
+  <div id="background" class="background responsive-img">
+    <div class="container">
+      <h5 class="flow-text center-align"><div translate="LOGIN.WELCOME"></div></h5>
+      <h2 class="center-align">
+        <div translate="LOGIN.NAMES"></div>
+      </h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password"><span translate="LOGIN.PASSWORD"></span></label>
+          </div>
         </div>
+        <div class="center-align">
+          <a class="waves-effect waves-light btn-large grey darken-2"><span class="text-bold" translate="LOGIN.GETIN"></span></a>
+        </div>
+      </div>
+      
+
+      <div class="language">
+        <app-language-selector></app-language-selector>
+      </div>
     </div>
-
-    <a class="waves-effect waves-light btn"><span translate="LOGIN.GETIN"></span></a>
-
-    <app-language-selector></app-language-selector>
   </div>
 </div>
