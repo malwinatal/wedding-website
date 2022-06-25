@@ -1,16 +1,20 @@
 <div class="welcome">
     <div  class="cover valign-wrapper">
         <div class="background">
-            <div class="container">
+            <div class="container text-on-image">
                 <h2 class="row center-align">
                     <div translate="INVITATION.NAMES"></div>
                 </h2>
     
                 <div class="row center-align">
                     <h5>
-                        <a routerLink="/home" fragment="location" translate="INVITATION.PLACE"></a>
+                        <a routerLink="/home" fragment="location">
+                            <span translate="INVITATION.PLACE"></span>
+                        </a>
                         <span> | </span>
-                        <a routerLink="/home" fragment="schedule" translate="INVITATION.DATE"></a>
+                        <a routerLink="/home" fragment="schedule">
+                            <span translate="INVITATION.DATE"></span>
+                        </a>
                     </h5>
                 </div>
             </div>
