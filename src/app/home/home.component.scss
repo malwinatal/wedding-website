@@ -1,4 +1,12 @@
+@import 'materialize-css/sass/materialize.scss';
+
 section {
     min-height: 100vh;
-    padding-top: 60px;
+    @media #{$small-and-down} {
+        padding-top: 56px;
+    }
+    
+    @media #{$medium-and-up} {
+        padding-top: 64px;
+    }
 }

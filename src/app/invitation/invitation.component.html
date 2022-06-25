@@ -1,21 +1,19 @@
-<div>
-    <div class="cover">
+<div class="welcome">
+    <div  class="cover valign-wrapper">
         <div class="background">
-            <div>
-                <div class="row center-align">
-                    <h1 translate="INVITATION.NAMES"></h1>
-                </div>
-                <div class="row center-align">
-                    <h5>
-                        <a routerLink="/home" fragment="location" translate="INVITATION.PLACE"></a>
-                        <span> | </span>
-                        <a routerLink="/home" fragment="schedule" translate="INVITATION.DATE"></a>
-                    </h5>
-                </div>
+            <div class="row center-align">
+                <h2 translate="INVITATION.NAMES"></h2>
+            </div>
+            <div class="row center-align">
+                <h5>
+                    <a routerLink="/home" fragment="location" translate="INVITATION.PLACE"></a>
+                    <span> | </span>
+                    <a routerLink="/home" fragment="schedule" translate="INVITATION.DATE"></a>
+                </h5>
             </div>
         </div>
     </div>
-    <div class="invitation">
+    <div class="invitation row">
         <h5><span translate="INVITATION.DEAR"></span><span> {{guest}},</span></h5>
         <span translate="INVITATION.INVITATION"></span>
     </div>

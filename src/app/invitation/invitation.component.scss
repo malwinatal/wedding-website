@@ -1,25 +1,47 @@
-@mixin responsive-bg-image($image-width, $image-height) {
-    background-size: 100%;
-    height: 0;
-    padding-bottom: percentage($image-height / $image-width);
-    display: block;
-}
+@import 'materialize-css/sass/materialize.scss';
 
+.welcome {
+    height: 100vh;
+    padding-top: 0;
 
-.cover {
-    height: 50vh;
-    width: 100vw;
-
-    .background {
-        background: url('../../assets/images/beach_cover.jpg') no-repeat;
-
-        // substitute for your image dimensions
-        @include responsive-bg-image(100%, 50%);
+    .cover {
+        height: 50%;
+        width: 100%;
+        .background {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            ::before {    
+                background-size: cover;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -2;
+                opacity: 0.6;
+            
+                @media #{$medium-and-down} {
+                    background-image: url('../../assets/images/beach.jpg');
+                
+                }
+                
+                @media #{$large-and-up} {
+                    background-image: url('../../assets/images/beach_cover.jpg');
+                
+                }
+            }
+            h2 {
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+        }
     }
-
-}
-
-.invitation {
-    height: 50vh;
-    width: 100vw;
+    
+    .invitation {
+        height: 50%;
+        width: 100%;
+    }
 }
