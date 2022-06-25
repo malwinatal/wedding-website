@@ -4,12 +4,13 @@
     <h1><span translate="LOGIN.NAMES"></span></h1>
     <div class="row">
         <div class="input-field col s12">
-            <input id="password" type="password" class="validate">
+            <input id="password" type="text" class="validate" [class.invalid]="invalid" #code>
             <label for="password"><span translate="LOGIN.PASSWORD"></span></label>
+            <span class="helper-text" [attr.data-error]="errorText"></span>
         </div>
     </div>
 
-    <a class="waves-effect waves-light btn"><span translate="LOGIN.GETIN"></span></a>
+    <a class="waves-effect waves-light btn" (click)="login(code.value)"><span translate="LOGIN.GETIN"></span></a>
 
     <app-language-selector></app-language-selector>
   </div>

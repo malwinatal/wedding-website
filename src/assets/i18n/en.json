@@ -3,7 +3,8 @@
       "WELCOME": "We're happy to annouce that we want you to celebrtate with us!",
       "NAMES": "Malwina and David",
       "GETIN": "Get in!",
-      "PASSWORD": "Password"
+      "PASSWORD": "Password",
+      "ERROR": "The code typed is not correct!"
     },
     "NAVBAR": {
         "HOME": "Home",
