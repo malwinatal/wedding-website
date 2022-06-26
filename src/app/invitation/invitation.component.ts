@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvitationComponent implements OnInit {
 
-  public guest: string = "human";
+  public guest: string = "human human";
+  public companions: string = "with your cats";
   constructor() { }
 
   ngOnInit(): void {

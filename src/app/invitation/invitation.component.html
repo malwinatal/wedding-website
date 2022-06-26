@@ -20,10 +20,18 @@
             </div>
         </div>
     </div>
-    <div class="invitation row">
+    <div class="invitation">
         <div class="container">
-            <h5><span translate="INVITATION.DEAR"></span><span> {{guest}},</span></h5>
-            <span translate="INVITATION.INVITATION"></span>
+            <h6 class="row center-align"><span translate="INVITATION.INVITE.DEAR"></span><span> {{guest}},</span></h6>
+            <div class="row center-align" translate="INVITATION.INVITE.HAPPY" [translateParams]="{ companions: companions }"></div>
+            <div class="row center-align" [innerHTML]="'INVITATION.INVITE.DETAILS' | translate"></div>
+            <div class="row center-align">
+                <span translate="INVITATION.INVITE.DRESSCODE"></span>
+                <span> : </span>
+                <span translate="INVITATION.INVITE.BUSINESSCASUAL"></span>
+            </div>
+            <div class="row center-align" translate="INVITATION.INVITE.NOGIFTS"></div>
+            <div class="row center-align" translate="INVITATION.INVITE.HOWEVER"></div>
         </div>
     </div>
 </div>
