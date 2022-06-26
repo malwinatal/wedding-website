@@ -23,10 +23,10 @@
       "INVITE": {
         "DEAR": "Dear",
         "HAPPY": "We're happy to invite {{ companions }} you for our wedding!",
-        "DETAILS": "The wedding will take place at <b>15:00 16th July 2023</b> in <b>Oczyszczalnia Miejsce</b> in Ludwików.",
+        "DETAILS": "The wedding will take place at 15:00 16th July 2023 in Oczyszczalnia Miejsce in Ludwików.",
         "DRESSCODE": "Dress code",
         "BUSINESSCASUAL": "Business Casual, flat shoes recommended.",
-        "NOGIFTS": "We don't except gifts from you, just your presence!",
+        "NOGIFTS": "We don't expect gifts from you, just your presence!",
         "HOWEVER": "But if you want, please give us money and animal food which we can donate to animal shelter."
 
       }
