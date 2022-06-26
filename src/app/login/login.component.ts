@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
-import { first, Observable } from 'rxjs';
+import { first } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
+import { FirestoreService } from '../services/firestore.service';
+import { Account } from '../models/Account';
+import { AccountService } from '../services/account.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +16,8 @@ export class LoginComponent implements OnInit {
   invalid = false;
   errorText = '';
   constructor(
-    private store: AngularFirestore,
+    private fs: FirestoreService,
+    private as: AccountService,
     private cookieService: CookieService,
     private router: Router,
     private translate: TranslateService
@@ -38,21 +41,16 @@ export class LoginComponent implements OnInit {
   }
 
   login(code: string): void {
-    this.store
-      .collection('logins', (ref) => ref.where('code', '==', code))
-      .get()
-      .subscribe((result) => {
-        if (result.empty) {
-          //FAIL
-          this.invalid = true;
-        } else {
-          //SUCCESS
-          this.invalid = false;
-          const person = result.docs[0];
-          this.cookieService.set('code', code);
-          this.router.navigate(['home']);
-        }
-      });
+    this.fs.getUserAccount(code).subscribe((result) => {
+      if (result == null) {
+        this.invalid = true;
+      } else {
+        this.invalid = false;
+        this.as.account = result;
+        this.cookieService.set('code', code);
+        this.router.navigate(['home']);
+      }
+    });
   }
 
   getWrongTextTranslation() {
