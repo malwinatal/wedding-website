@@ -9,7 +9,8 @@ import { AccountService } from '../services/account.service';
 })
 export class InvitationComponent implements OnInit {
   userAccount!: Account;
-  public guest: string = 'human';
+  public guest: string = 'human human';
+  public companions: string = 'with your cats';
 
   constructor(as: AccountService) {
     this.userAccount = as.account;

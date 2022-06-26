@@ -18,9 +18,18 @@
     },
     "INVITATION": {
       "NAMES": "Malwina & David",
-      "PLACE": "Oczyszczalnia",
-      "DATE": "16th July 2023",
-      "DEAR": "Dear",
-      "INVITATION": "We're happy to invite you for our wedding!"
+      "PLACE": "Oczyszczalnia Miejsce",
+      "DATE": "15:00 16th July 2023",
+      "INVITE": {
+        "DEAR": "Dear",
+        "HAPPY": "We're happy to invite {{ companions }} you for our wedding!",
+        "DETAILS": "The wedding will take place at <b>15:00 16th July 2023</b> in <b>Oczyszczalnia Miejsce</b> in Ludwików.",
+        "DRESSCODE": "Dress code",
+        "BUSINESSCASUAL": "Business Casual, flat shoes recommended.",
+        "NOGIFTS": "We don't except gifts from you, just your presence!",
+        "HOWEVER": "But if you want, please give us money and animal food which we can donate to animal shelter."
+
+      }
+      
   }
 }
