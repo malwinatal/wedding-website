@@ -30,6 +30,8 @@
         "HOWEVER": "But if you want, please give us money and animal food which we can donate to animal shelter."
 
       }
-      
+  },
+  "LOCATION": {
+    "BUTTON": "Go to maps"
   }
 }

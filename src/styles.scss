@@ -1,3 +1,11 @@
+@import "materialize-css/sass/components/color-variables";
+@import "materialize-css/sass/components/color-classes";
+
+$primary-color: color("blue-grey", "darken-3") !default;
+$primary-color-light: color("blue-grey", "base") !default;
+$primary-color-dark: color("blue-grey", "darken-4") !default;
+$secondary-color: $primary-color-light;
+
 @import 'materialize-css/sass/materialize.scss';
 
 /* You can add global styles to this file, and also import other style files */
@@ -94,6 +102,10 @@ body {
         h6 {
             font-size: 1.44rem !important;
         }
+    }
+
+    .btn,.btn-large {
+      background-color: $primary-color;
     }
 
 }
