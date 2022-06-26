@@ -31,7 +31,9 @@
     }
   },
   "LOCATION": {
-    "BUTTON": "Go to maps"
+    "BUTTON_MAPS": "Go to maps",
+    "BUTTON_VENUE": "Go to venue",
+    "ADDRESS": "Address"
   },
   "SCHEDULE": {
     "TITLE": "Schedule",
