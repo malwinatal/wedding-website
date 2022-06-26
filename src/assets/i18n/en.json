@@ -32,7 +32,8 @@
   },
   "LOCATION": {
     "BUTTON_MAPS": "Go to maps",
-    "BUTTON_VENUE": "Go to venue"
+    "BUTTON_VENUE": "Go to venue",
+    "ADDRESS": "Address"
   },
   "SCHEDULE": {
     "WELCOME": "Welcome lemonade and snacks",
