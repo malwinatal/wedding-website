@@ -10,26 +10,38 @@ $secondary-color: $primary-color-light;
 
 /* You can add global styles to this file, and also import other style files */
 body {
+
+    //FONTS
     font-family: 'Courier New', monospace;
+
+    h5 {
+        color: $primary-color
+    }
 
     @media #{$small-and-down} {
         // styles for medium screens and down
         font-size: 0.875rem !important;
+
         h1 {
             font-size: 3.675rem !important;
         }
+
         h2 {
             font-size: 3.115rem !important;
         }
+
         h3 {
             font-size: 2.555rem !important;
         }
+
         h4 {
             font-size: 1.995rem !important;
         }
+
         h5 {
             font-size: 1.435rem !important;
         }
+
         h6 {
             font-size: 0.976rem !important;
         }
@@ -38,21 +50,27 @@ body {
     // default
     @media #{$medium-and-up} {
         font-size: 1rem !important;
+
         h1 {
             font-size: 4.2rem !important;
         }
+
         h2 {
             font-size: 3.56rem !important;
         }
+
         h3 {
             font-size: 2.92rem !important;
         }
+
         h4 {
             font-size: 2.28rem !important;
         }
+
         h5 {
             font-size: 1.64rem !important;
         }
+
         h6 {
             font-size: 1.15rem !important;
         }
@@ -61,21 +79,27 @@ body {
     @media #{$large-and-up} {
         // styles for large screens and up
         font-size: 1.125rem !important;
+
         h1 {
             font-size: 4.725rem !important;
         }
+
         h2 {
             font-size: 4.005rem !important;
         }
+
         h3 {
             font-size: 3.285rem !important;
         }
+
         h4 {
             font-size: 2.565rem !important;
         }
+
         h5 {
             font-size: 1.845rem !important;
         }
+
         h6 {
             font-size: 1.295rem !important;
         }
@@ -84,28 +108,36 @@ body {
     @media #{$extra-large-and-up} {
         // styles for extra large screens and up
         font-size: 1.25rem !important;
+
         h1 {
             font-size: 5.25rem !important;
         }
+
         h2 {
             font-size: 4.45rem !important;
         }
+
         h3 {
             font-size: 3.65rem !important;
         }
+
         h4 {
             font-size: 2.85rem !important;
         }
+
         h5 {
             font-size: 2.05rem !important;
         }
+
         h6 {
             font-size: 1.44rem !important;
         }
     }
 
-    .btn,.btn-large {
-      background-color: $primary-color;
+    // BUTTONS
+    .btn,
+    .btn-large {
+        background-color: $primary-color;
     }
 
 }
