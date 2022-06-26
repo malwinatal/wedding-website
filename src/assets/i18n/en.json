@@ -1,35 +1,41 @@
 {
-    "LOGIN": {
-      "WELCOME": "We're happy to annouce that we want you to celebrtate with us!",
-      "NAMES": "Malwina & David",
-      "GETIN": "Get in!",
-      "PASSWORD": "Password",
-      "ERROR": "The code typed is not correct!"
-    },
-    "NAVBAR": {
-        "HOME": "Home",
-        "RSVP": "RSVP",
-        "LOCATION": "Location",
-        "SCHEDULE": "Schedule",
-        "PICTURES": "Pictures",
-        "COUNTRIES": "Our countries",
-        "CONTACT": "Contact",
-        "COMPANIES": "Companies"
-    },
-    "INVITATION": {
-      "NAMES": "Malwina & David",
-      "PLACE": "Oczyszczalnia Miejsce",
-      "DATE": "15:00 16th July 2023",
-      "INVITE": {
-        "DEAR": "Dear",
-        "HAPPY": "We're happy to invite {{ companions }} you for our wedding!",
-        "DETAILS": "The wedding will take place at 15:00 16th July 2023 in Oczyszczalnia Miejsce in Ludwików.",
-        "DRESSCODE": "Dress code",
-        "BUSINESSCASUAL": "Business Casual, flat shoes recommended.",
-        "NOGIFTS": "We don't expect gifts from you, just your presence!",
-        "HOWEVER": "But if you want, please give us money and animal food which we can donate to animal shelter."
-
-      }
-      
+  "LOGIN": {
+    "WELCOME": "We're happy to annouce that we want you to celebrtate with us!",
+    "NAMES": "Malwina & David",
+    "GETIN": "Get in!",
+    "PASSWORD": "Password",
+    "ERROR": "The code typed is not correct!"
+  },
+  "NAVBAR": {
+    "HOME": "Home",
+    "RSVP": "RSVP",
+    "LOCATION": "Location",
+    "SCHEDULE": "Schedule",
+    "PICTURES": "Pictures",
+    "COUNTRIES": "Our countries",
+    "CONTACT": "Contact",
+    "COMPANIES": "Companies"
+  },
+  "INVITATION": {
+    "NAMES": "Malwina & David",
+    "PLACE": "Oczyszczalnia Miejsce",
+    "DATE": "15:00 16th July 2023",
+    "INVITE": {
+      "DEAR": "Dear",
+      "HAPPY": "We're happy to invite {{ companions }} you for our wedding!",
+      "DETAILS": "The wedding will take place at 15:00 16th July 2023 in Oczyszczalnia Miejsce in Ludwików.",
+      "DRESSCODE": "Dress code",
+      "BUSINESSCASUAL": "Business Casual, flat shoes recommended.",
+      "NOGIFTS": "We don't expect gifts from you, just your presence!",
+      "HOWEVER": "But if you want, please give us money and animal food which we can donate to animal shelter."
+    }
+  },
+  "SCHEDULE": {
+    "WELCOME": "Welcome lemonade and snacks",
+    "CEREMONY": "Ceremony near the lake",
+    "MEAL": "Main dish",
+    "GRILL": "Barbeque for dinner",
+    "CAKE": "Time for wedding cake!",
+    "SOUP": "Night soup"
   }
 }

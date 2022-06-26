@@ -1,1 +1,14 @@
-<p>schedule works!</p>
+<div class="container">
+    <h5 class="text-blue-grey darken-3-text"><b>Schedule</b></h5>
+    <div ></div>
+    <div class="vtl">
+        <div class="col s12 m7" *ngFor="let item of scheduleItems; index as i;">
+            <div class="card horizontal">
+                <div class="card-content event">
+                    <h6><b>{{item.time}}</b></h6>
+                    <p translate="{{item.translation}}"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
