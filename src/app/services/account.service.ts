@@ -5,7 +5,7 @@ import { Account } from '../models/Account';
   providedIn: 'root',
 })
 export class AccountService {
-  private _loggedIn: boolean = true;
+  private _loggedIn: boolean = false;
   private _account!: Account;
 
   constructor() {}
