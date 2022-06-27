@@ -12,7 +12,7 @@
     <div class="container">
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="text" class="validate" [class.invalid]="invalid" (keyup.enter)="login(code.value)" #code>
+          <input id="password" type="text" class="validate" [class.invalid]="invalid" (keyup.enter)="login(code.value)" #code autofocus>
           <label for="password"><span translate="LOGIN.PASSWORD"></span></label>
           <span class="helper-text" [attr.data-error]="errorText"></span>
         </div>
