@@ -138,6 +138,10 @@ body {
     .btn,
     .btn-large {
         background-color: $primary-color;
+
+        &:hover {
+          background-color: $secondary-color;
+        }
     }
 
 }
