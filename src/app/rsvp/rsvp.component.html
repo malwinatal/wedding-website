@@ -1,40 +1,54 @@
 <div class="container">
-    <div class="row">
-        <div class="col m12 l6" *ngFor="let guest of guests; index as i;">
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-title">
-                        <span>RSVP</span>
-                        <span>&nbsp;</span>
-                        <span><i class="fa-solid fa-envelope"></i></span>
-                        <span>&nbsp;</span>
-                        <span>{{guest.name}}</span>
-                    </div>
-                    <form action="#">
-                        <p>
-                          <label>
-                            <input type="checkbox" />
-                            <span>Going?</span>
-                          </label>
-                        </p>
-                        <b>Please choose your diet</b>
-                        <p>
-                            <label>
-                              <input name="diet" type="radio" />
-                              <span>Plant based meal</span>
-                            </label>
-                          </p>
-                          <p>
-                            <label>
-                              <input name="diet" type="radio" />
-                              <span>Meat based meal</span>
-                            </label>
-                          </p>
-                          <b>Any allergies or dietary restrictions?</b>
-                          <div class="chips chips-placeholder"></div>
-                      </form>        
-                </div>
+  <div class="row">
+    <div class="col m12 l6" *ngFor="let guest of guests; index as i;">
+      <div class="card">
+        <div class="card-content">
+          <div class="center-align blue-grey-text text-darken-4">
+            <h5>
+              <span>RSVP</span>
+              <span>&nbsp;</span>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <span>&nbsp;</span>
+            </h5>
+            <h6><b>{{guest.name}}</b></h6>
+          </div>
+          <form action="#">
+            <div class="container">
+              <div class="row">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span><b>Going?</b></span>
+                  </label>
+                </p>
+              </div>
+              <div class="row">
+                <b>Please choose your diet</b>
+                <p>
+                  <label>
+                    <input name="diet" type="radio" />
+                    <span>Plant based meal</span>
+                    <span>&nbsp;</span>
+                    <i class="fa-solid fa-seedling fa-2x"></i>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="diet" type="radio" />
+                    <span>Meat based meal</span>
+                    <span>&nbsp;</span>
+                    <i class="fa-solid fa-cow fa-2x"></i>
+                  </label>
+                </p>
+              </div>
+              <div class="row">
+                <b>Any allergies or dietary restrictions?</b>
+                <div class="chips chips-placeholder"></div>
+              </div>
             </div>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 </div>
