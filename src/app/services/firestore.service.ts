@@ -27,13 +27,10 @@ export class FirestoreService {
       .valueChanges();
   }
 
-  getRsvpsForAccount(id: string): Observable<Array<Rsvp>> {
-    const rsvps = [
-      new Rsvp("uu1", "Davidek", "Gagooo", true, Diets.MEAT, []),
-      new Rsvp("uu2", "DavDav", "", false, Diets.PLANT, []),
-      new Rsvp("uu3", "Guest Guest Guest Guest", "Guest", false, undefined, []),
-    ];
-    return of(rsvps);
+  getRsvpsForAccount(accountId: string): Observable<Array<Rsvp>> {
+    return this.store
+      .collection<Rsvp>('rsvps', (ref) => ref.where('accountId', '==', accountId))
+      .valueChanges();
   }
   
 }

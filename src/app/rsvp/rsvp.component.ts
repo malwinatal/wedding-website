@@ -38,14 +38,13 @@ export class RsvpComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.rsvpService.getRsvpsForAccount(this.accontService.accountId).subscribe(guests => {
       this.guestForms = this.formBuilder.array(guests.map(guest => this.adaptGuestToFormGroup(guest)));
+      this.guestForms.valueChanges.subscribe(((form: FormGroup) => console.log(form)));
     });
-
-    this.guestForms.valueChanges.subscribe(((form: FormGroup) => console.log(form)));
   }
 
   adaptGuestToFormGroup(guest: Rsvp): FormGroup {
     return this.formBuilder.group({
-      id: [guest.id],
+      id: [guest.accountId],
       name: [guest.name],
       surname: [guest.surname],
       going: [guest.going],

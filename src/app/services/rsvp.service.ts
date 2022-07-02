@@ -10,8 +10,8 @@ export class RsvpService {
 
   constructor(private fireStoreService: FirestoreService) { }
 
-  getRsvpsForAccount(id: string): Observable<Array<Rsvp>> {
-    return this.fireStoreService.getRsvpsForAccount(id);
+  getRsvpsForAccount(accountId: string): Observable<Array<Rsvp>> {
+    return this.fireStoreService.getRsvpsForAccount(accountId);
   }
 
 }

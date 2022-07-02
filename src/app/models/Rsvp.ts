@@ -2,7 +2,7 @@ import { Diets } from "./Diets";
 
 export class Rsvp {
   constructor(
-    public id: string,
+    public accountId: string,
     public name: string,
     public surname: string,
     public going: boolean,
