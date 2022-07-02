@@ -24,6 +24,9 @@ import { ContactComponent } from './contact/contact.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { CookieService } from 'ngx-cookie-service';
 import { MapComponent } from './location/map/map.component';
+import { FormBuilder } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { EmailService } from './services/email.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -43,7 +46,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CountriesComponent,
     ContactComponent,
     CompaniesComponent,
-    MapComponent
+    MapComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,12 +58,13 @@ export function HttpLoaderFactory(http: HttpClient) {
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
+        deps: [HttpClient],
       },
       defaultLanguage: 'en',
-    })
+    }),
+    ReactiveFormsModule,
   ],
-  providers: [CookieService],
-  bootstrap: [AppComponent]
+  providers: [CookieService, FormBuilder, EmailService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

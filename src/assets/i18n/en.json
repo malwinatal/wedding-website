@@ -1,6 +1,6 @@
 {
   "LOGIN": {
-    "WELCOME": "We're happy to annouce that we want you to celebrtate with us!",
+    "WELCOME": "We're happy to annouce that we want you to celebrate with us!",
     "NAMES": "Malwina & David",
     "GETIN": "Get in!",
     "PASSWORD": "Password",
@@ -32,6 +32,7 @@
   },
   "LOCATION": {
     "BUTTON_MAPS": "Go to maps",
+    "BUTTON_WAZE": "Go to waze",
     "BUTTON_VENUE": "Go to venue",
     "ADDRESS": "Address"
   },
@@ -43,5 +44,19 @@
     "GRILL": "Barbeque for dinner",
     "CAKE": "Time for wedding cake!",
     "SOUP": "Night soup"
+  },
+  "CONTACT": {
+    "TITLE": "Contacts",
+    "TEXT": "In case you have any questions please ask us through WhatsApp, SMS, email or the form bellow.",
+    "SEND": "Send",
+    "SUBJECT": {
+      "LABEL": "Subject",
+      "PLACEHOLDER": ""
+    },
+    "BODY": "Description",
+    "SENDER": "Sender",
+    "FROM": "Your email",
+    "EMAIL_ERROR": "Please insert a valid email!",
+    "EMPTY_ERROR": "This field cannot be empty!"
   }
 }

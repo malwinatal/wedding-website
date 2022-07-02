@@ -1,1 +1,125 @@
-<p>contact works!</p>
+<div class="container">
+  <div class="row center-align">
+    <h5><b translate="CONTACT.TITLE"></b></h5>
+  </div>
+  <p class="flow-text" translate="CONTACT.TEXT"></p>
+
+  <p>
+    <a [href]="'https://wa.me/' + info?.portuguesePhoneWA" target="_blank"
+      ><i class="fa-brands fa-whatsapp"></i>&nbsp;<span>{{
+        info?.portuguesePhone
+      }}</span></a
+    >
+  </p>
+  <p>
+    <a [href]="'https://wa.me/' + info?.polishPhoneWA" target="_blank"
+      ><i class="fa-brands fa-whatsapp"></i>&nbsp;<span>{{
+        info?.polishPhone
+      }}</span></a
+    >
+  </p>
+
+  <p>
+    <a [href]="'mailto:' + info?.email" target="_blank"
+      ><i class="fa-solid fa-envelope"></i>&nbsp;<span>{{
+        info?.email
+      }}</span></a
+    >
+  </p>
+
+  <p>
+    <i class="fa-solid fa-piggy-bank"></i>&nbsp;<span>{{
+      info?.portugueseBankAccount
+    }}</span>
+  </p>
+  <p>
+    <i class="fa-solid fa-piggy-bank"></i>&nbsp;<span>{{
+      info?.polishBankAccount
+    }}</span>
+  </p>
+
+  <div class="row">
+    <form
+      class="col s12"
+      [formGroup]="emailForm"
+      (ngSubmit)="sendEmail(emailForm.getRawValue())"
+    >
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input
+            id="sender"
+            type="text"
+            class="validate"
+            formControlName="name"
+          />
+          <label for="sender" class="active" translate="CONTACT.SENDER"></label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input
+            id="email"
+            type="email"
+            class="validate"
+            formControlName="_replyto"
+          />
+          <label for="email" translate="CONTACT.FROM"></label>
+          <span
+            class="helper-text"
+            [attr.data-error]="'CONTACT.EMAIL_ERROR' | translate"
+          ></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input
+            id="subject"
+            type="text"
+            class=""
+            [class.invalid]="
+              emailForm.get('subject')?.dirty &&
+              emailForm.get('subject')?.invalid
+            "
+            formControlName="_subject"
+          />
+          <label for="subject" translate="CONTACT.SUBJECT.LABEL"></label>
+          <span
+            class="helper-text"
+            [attr.data-error]="'CONTACT.EMPTY_ERROR' | translate"
+          ></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea
+            id="textarea"
+            class="materialize-textarea"
+            [class.invalid]="
+              emailForm.get('text')?.dirty && emailForm.get('text')?.invalid
+            "
+            formControlName="message"
+          ></textarea>
+          <label for="textarea" translate="CONTACT.BODY"></label>
+          <span
+            class="helper-text"
+            [attr.data-error]="'CONTACT.EMPTY_ERROR' | translate"
+          ></span>
+        </div>
+      </div>
+      <input type="hidden" name="_honeypot" value="" formControlName="_honey" />
+      <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+        formControlName="_captcha"
+      />
+      <button
+        class="btn waves-effect waves-light right"
+        type="submit"
+        name="action"
+        [disabled]="!emailForm.valid"
+      >
+        <span translate="CONTACT.SEND"></span>
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+</div>
