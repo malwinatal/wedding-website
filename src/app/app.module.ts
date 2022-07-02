@@ -24,9 +24,8 @@ import { ContactComponent } from './contact/contact.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { CookieService } from 'ngx-cookie-service';
 import { MapComponent } from './location/map/map.component';
-import { FormBuilder } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
 import { EmailService } from './services/email.service';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
