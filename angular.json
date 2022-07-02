@@ -38,7 +38,6 @@
             "styles": [
               "src/styles.scss",
               "./node_modules/leaflet/dist/leaflet.css",
-              "./node_modules/materialize-css/dist/css/materialize.css",
               "./node_modules/flag-icons/css/flag-icons.min.css"
             ],
             "scripts": []
