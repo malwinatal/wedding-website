@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col m12 l6">
+    <div class="col m12 l6" *ngFor="let guest of guestForms.controls; index as i;">
       <div class="card">
         <div class="card-content">
           <div class="center-align blue-grey-text text-darken-4">
@@ -10,9 +10,9 @@
               <span><i class="fa-solid fa-envelope"></i></span>
               <span>&nbsp;</span>
             </h5>
-            <h6><b>{{guests[0].name}}</b></h6>
+            <h6><b>{{guest.value.name}}</b></h6>
           </div>
-          <form [formGroup]="guestForm" >
+          <form [formGroup]="guest">
             <div class="container">
               <div class="row">
                 <p>
