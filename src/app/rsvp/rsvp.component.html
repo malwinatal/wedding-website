@@ -10,7 +10,7 @@
               <span><i class="fa-solid fa-envelope"></i></span>
               <span>&nbsp;</span>
             </h5>
-            <h6><b>{{guest.value.name}}</b></h6>
+            <h6><b>{{guest.value.name}} {{guest.value.surname}}</b></h6>
           </div>
           <form [formGroup]="guest">
             <div class="container">
@@ -26,7 +26,7 @@
                 <b>Please choose your diet</b>
                 <p>
                   <label>
-                    <input name="diet" type="radio" value="plant" formControlName="diet"/>
+                    <input name="diet" type="radio" value="Diet.PLANT" formControlName="diet"/>
                     <span>Plant based meal</span>
                     <span>&nbsp;</span>
                     <i class="fa-solid fa-seedling fa-2x"></i>
@@ -34,7 +34,7 @@
                 </p>
                 <p>
                   <label>
-                    <input name="diet" type="radio" value="meat" formControlName="diet"/>
+                    <input name="diet" type="radio" value="Diet.MEAT" formControlName="diet"/>
                     <span>Meat based meal</span>
                     <span>&nbsp;</span>
                     <i class="fa-solid fa-cow fa-2x"></i>

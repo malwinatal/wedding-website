@@ -22,4 +22,8 @@ export class AccountService {
   get loggedIn(): boolean {
     return this._loggedIn;
   }
+
+  get accountId(): string {
+    return this._account?.id;
+  }
 }
