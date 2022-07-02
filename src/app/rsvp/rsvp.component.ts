@@ -40,14 +40,15 @@ export class RsvpComponent implements OnInit, AfterViewInit {
       name: [guest.name],
       going: [],
       diet: [""],
-      allergies: this.formBuilder.group({tag: []})
+      allergies: []
     });
 
   }
 
   updateChips(): void {
-    this.instances.map(i => console.log(i.chipsData));
-    //this.guestForm.patchValue({allergies: arr});
+    this.guestForms.controls.forEach((el, i) => {
+      el.patchValue({allergies: this.instances[i].chipsData});
+    });
   }
 
 }
