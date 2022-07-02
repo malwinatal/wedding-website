@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Guest } from '../models/Guest';
+import { Rsvp } from '../models/Rsvp';
 import { FirestoreService } from './firestore.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GuestService {
+export class RsvpService {
 
   constructor(private fireStoreService: FirestoreService) { }
 
-  getGuestsForAccount(id: string): Observable<Array<Guest>> {
-    return this.fireStoreService.getGuestsForAccount(id);
+  getRsvpsForAccount(id: string): Observable<Array<Rsvp>> {
+    return this.fireStoreService.getRsvpsForAccount(id);
   }
 
 }

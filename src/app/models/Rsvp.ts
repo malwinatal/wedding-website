@@ -1,6 +1,6 @@
 import { Diets } from "./Diets";
 
-export class Guest {
+export class Rsvp {
   constructor(
     public id: string,
     public name: string,

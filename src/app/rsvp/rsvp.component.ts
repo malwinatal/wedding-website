@@ -1,10 +1,10 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit, AfterViewInit } from '@angular/core';
-import { FormArray, FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Diets } from '../models/Diets';
-import { Guest } from '../models/Guest';
+import { Rsvp } from '../models/Rsvp';
 import { AccountService } from '../services/account.service';
-import { GuestService } from '../services/guest.service';
+import { RsvpService } from '../services/rsvp.service';
 
 @Component({
   selector: 'app-rsvp',
@@ -13,13 +13,14 @@ import { GuestService } from '../services/guest.service';
 })
 export class RsvpComponent implements OnInit, AfterViewInit {
 
+  Diets = Diets;
   guestForms: any;
   instances: M.Chips[] = [];
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private formBuilder: FormBuilder,
-    private guestService: GuestService,
+    private rsvpService: RsvpService,
     private accontService: AccountService
   ) {  
   }
@@ -35,14 +36,14 @@ export class RsvpComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.guestService.getGuestsForAccount(this.accontService.accountId).subscribe(guests => {
+    this.rsvpService.getRsvpsForAccount(this.accontService.accountId).subscribe(guests => {
       this.guestForms = this.formBuilder.array(guests.map(guest => this.adaptGuestToFormGroup(guest)));
     });
 
     this.guestForms.valueChanges.subscribe(((form: FormGroup) => console.log(form)));
   }
 
-  adaptGuestToFormGroup(guest: Guest): FormGroup {
+  adaptGuestToFormGroup(guest: Rsvp): FormGroup {
     return this.formBuilder.group({
       id: [guest.id],
       name: [guest.name],

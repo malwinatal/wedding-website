@@ -26,7 +26,7 @@
                 <b>Please choose your diet</b>
                 <p>
                   <label>
-                    <input name="diet" type="radio" value="Diet.PLANT" formControlName="diet"/>
+                    <input name="diet" type="radio" [value]="Diets.PLANT" formControlName="diet"/>
                     <span>Plant based meal</span>
                     <span>&nbsp;</span>
                     <i class="fa-solid fa-seedling fa-2x"></i>
@@ -34,7 +34,7 @@
                 </p>
                 <p>
                   <label>
-                    <input name="diet" type="radio" value="Diet.MEAT" formControlName="diet"/>
+                    <input name="diet" type="radio" [value]="Diets.MEAT" formControlName="diet"/>
                     <span>Meat based meal</span>
                     <span>&nbsp;</span>
                     <i class="fa-solid fa-cow fa-2x"></i>

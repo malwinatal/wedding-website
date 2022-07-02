@@ -3,7 +3,8 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { map, Observable, of } from 'rxjs';
 import { Account } from '../models/Account';
 import { PersonalInfo } from '../models/PersonalInfo';
-import { Guest } from '../models/Guest';
+import { Rsvp } from '../models/Rsvp';
+import { Diets } from '../models/Diets';
 
 @Injectable({
   providedIn: 'root',
@@ -26,13 +27,13 @@ export class FirestoreService {
       .valueChanges();
   }
 
-  getGuestsForAccount(id: string): Observable<Array<Guest>> {
-    const guests = [
-      new Guest("uu1", "Davidek", "Gagooo", true, undefined, []),
-      new Guest("uu2", "DavDav", "", false, undefined, []),
-      new Guest("uu3", "Guest Guest Guest Guest", "Guest", false, undefined, []),
+  getRsvpsForAccount(id: string): Observable<Array<Rsvp>> {
+    const rsvps = [
+      new Rsvp("uu1", "Davidek", "Gagooo", true, Diets.MEAT, []),
+      new Rsvp("uu2", "DavDav", "", false, Diets.PLANT, []),
+      new Rsvp("uu3", "Guest Guest Guest Guest", "Guest", false, undefined, []),
     ];
-    return of(guests);
+    return of(rsvps);
   }
   
 }
