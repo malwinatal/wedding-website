@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { map, Observable } from 'rxjs';
+import { map, Observable, of } from 'rxjs';
 import { Account } from '../models/Account';
 import { PersonalInfo } from '../models/PersonalInfo';
+import { Rsvp } from '../models/Rsvp';
+import { Diets } from '../models/Diets';
 
 @Injectable({
   providedIn: 'root',
@@ -24,4 +26,11 @@ export class FirestoreService {
       .doc<PersonalInfo>('personalInfo/gI89B6SX7PEJrcRnkQ5M')
       .valueChanges();
   }
+
+  getRsvpsForAccount(accountId: string): Observable<Array<Rsvp>> {
+    return this.store
+      .collection<Rsvp>('rsvps', (ref) => ref.where('accountId', '==', accountId))
+      .valueChanges();
+  }
+  
 }
