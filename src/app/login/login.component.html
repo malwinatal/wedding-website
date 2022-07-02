@@ -14,7 +14,7 @@
         <div class="input-field col s12">
           <input id="password" type="text" class="validate" [class.invalid]="invalid" (keyup.enter)="login(code.value)" #code autofocus>
           <label for="password"><span translate="LOGIN.PASSWORD"></span></label>
-          <span class="helper-text" [attr.data-error]="errorText"></span>
+          <span class="helper-text" [attr.data-error]="'LOGIN.ERROR' | translate"></span>
         </div>
       </div>
       <div class="center-align">

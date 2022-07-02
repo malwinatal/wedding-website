@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
-import { first } from 'rxjs';
-import { TranslateService } from '@ngx-translate/core';
 import { FirestoreService } from '../services/firestore.service';
-import { Account } from '../models/Account';
 import { AccountService } from '../services/account.service';
 
 @Component({
@@ -14,13 +11,11 @@ import { AccountService } from '../services/account.service';
 })
 export class LoginComponent implements OnInit {
   invalid = false;
-  errorText = '';
   constructor(
     private fs: FirestoreService,
     private as: AccountService,
     private cookieService: CookieService,
-    private router: Router,
-    private translate: TranslateService
+    private router: Router
   ) {
     document.addEventListener('DOMContentLoaded', function () {
       const elems = document.querySelectorAll('select');
@@ -33,11 +28,6 @@ export class LoginComponent implements OnInit {
       const code = this.cookieService.get('code');
       this.login(code);
     }*/
-    this.getWrongTextTranslation();
-    this.translate.onLangChange.subscribe((event) => {
-      this.translate.use(event.lang);
-      this.getWrongTextTranslation();
-    });
   }
 
   login(code: string): void {
@@ -51,12 +41,5 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['home']);
       }
     });
-  }
-
-  getWrongTextTranslation() {
-    this.translate
-      .get('LOGIN.ERROR')
-      .pipe(first())
-      .subscribe((text) => (this.errorText = text));
   }
 }
