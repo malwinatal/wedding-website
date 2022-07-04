@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit, AfterViewInit } from '@angular/core';
+import { Component, Inject, OnInit, AfterViewChecked } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Diets } from '../models/Diets';
 import { Rsvp } from '../models/Rsvp';
@@ -11,11 +11,13 @@ import { RsvpService } from '../services/rsvp.service';
   templateUrl: './rsvp.component.html',
   styleUrls: ['./rsvp.component.scss']
 })
-export class RsvpComponent implements OnInit, AfterViewInit {
+export class RsvpComponent implements OnInit, AfterViewChecked {
 
   Diets = Diets;
   guestForms: any;
   instances: M.Chips[] = [];
+
+  private chipsInitialized = false;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -25,7 +27,14 @@ export class RsvpComponent implements OnInit, AfterViewInit {
   ) {  
   }
 
-  ngAfterViewInit(): void {
+  ngAfterViewChecked(): void {
+    if (this.guestForms && !this.chipsInitialized) {
+      this.initializeChips();
+      this.chipsInitialized = true;
+    }
+  }
+
+  initializeChips(): void {
     var elems = document.querySelectorAll('.chips');
     this.instances = M.Chips.init(elems, { 
       "placeholder": "Add tag",
