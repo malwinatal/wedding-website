@@ -34,6 +34,14 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
     }
   }
 
+  ngOnInit(): void {
+    this.rsvpService.getRsvpsForAccount(this.accontService.accountId).subscribe(guests => {
+      this.guestForms = this.formBuilder.array(guests.map(guest => this.adaptGuestToFormGroup(guest)));
+
+      this.guestForms.controls.forEach((form: FormGroup)  => form.valueChanges.subscribe((form: Rsvp) => console.log(form)))
+    });
+  }
+
   initializeChips(): void {
     var elems = document.querySelectorAll('.chips');
     this.instances = M.Chips.init(elems, { 
@@ -42,23 +50,24 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
       "onChipAdd": () => this.updateChips(), 
       "onChipDelete": () => this.updateChips() 
     });
-  }
-
-  ngOnInit(): void {
-    this.rsvpService.getRsvpsForAccount(this.accontService.accountId).subscribe(guests => {
-      this.guestForms = this.formBuilder.array(guests.map(guest => this.adaptGuestToFormGroup(guest)));
-      this.guestForms.valueChanges.subscribe(((form: FormGroup) => console.log(form)));
-    });
+    this.setInitialChips();
   }
 
   adaptGuestToFormGroup(guest: Rsvp): FormGroup {
     return this.formBuilder.group({
-      id: [guest.accountId],
+      accountId: [guest.accountId],
+      id: [guest.id],
       name: [guest.name],
       surname: [guest.surname],
       going: [guest.going],
       diet: [guest.diet],
       allergies: [guest.allergies]
+    });
+  }
+
+  setInitialChips(): void {
+    this.guestForms.value.forEach((rsvp: Rsvp, i: number) => {
+      rsvp.allergies.forEach(allergy => this.instances[i].addChip({tag: allergy}));
     });
   }
 
@@ -68,5 +77,9 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
       form.patchValue({allergies: allergies});
     });
   }
+
+  //saveForm(form: Rsvp): void {
+  //  this.rsvpService.saveRsvpForAccount(this.accontService.accountId, form);
+  //}
 
 }
