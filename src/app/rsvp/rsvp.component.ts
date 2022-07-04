@@ -5,6 +5,7 @@ import { Diets } from '../models/Diets';
 import { Rsvp } from '../models/Rsvp';
 import { AccountService } from '../services/account.service';
 import { RsvpService } from '../services/rsvp.service';
+import * as M from 'materialize-css';
 
 @Component({
   selector: 'app-rsvp',
