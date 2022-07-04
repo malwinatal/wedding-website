@@ -14,4 +14,8 @@ export class RsvpService {
     return this.fireStoreService.getRsvpsForAccount(accountId);
   }
 
+/*   saveRsvpForAccount(accountId: string, rsvp: Rsvp): void {
+    this.fireStoreService.saveRsvpForAccount(accountId, rsvp);
+  } */
+
 }

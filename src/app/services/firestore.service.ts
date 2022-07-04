@@ -5,6 +5,7 @@ import { Account } from '../models/Account';
 import { PersonalInfo } from '../models/PersonalInfo';
 import { Rsvp } from '../models/Rsvp';
 import { Diets } from '../models/Diets';
+import { getDocs, query, where, collection } from 'firebase/firestore'
 
 @Injectable({
   providedIn: 'root',
@@ -32,5 +33,12 @@ export class FirestoreService {
       .collection<Rsvp>('rsvps', (ref) => ref.where('accountId', '==', accountId))
       .valueChanges();
   }
+
+/*   saveRsvpForAccount(accountId: string, rsvp: Rsvp): void {
+    this.store
+      .collection<Rsvp>('rsvps', (ref) => ref.where('accountId', '==', accountId).where('id', '==', rsvp.id))
+      .doc()
+      .update(rsvp); 
+  } */
   
 }
