@@ -1,9 +1,9 @@
-import { Diets } from "./Diets";
+import { Diets } from './Diets';
 
 export class Rsvp {
   constructor(
     public accountId: string,
-    public id: number,
+    public id: string,
     public name: string,
     public surname: string,
     public going: boolean,

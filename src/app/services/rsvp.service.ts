@@ -4,18 +4,16 @@ import { Rsvp } from '../models/Rsvp';
 import { FirestoreService } from './firestore.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RsvpService {
-
-  constructor(private fireStoreService: FirestoreService) { }
+  constructor(private fireStoreService: FirestoreService) {}
 
   getRsvpsForAccount(accountId: string): Observable<Array<Rsvp>> {
     return this.fireStoreService.getRsvpsForAccount(accountId);
   }
 
-/*   saveRsvpForAccount(accountId: string, rsvp: Rsvp): void {
-    this.fireStoreService.saveRsvpForAccount(accountId, rsvp);
-  } */
-
+  saveRsvp(rsvp: Rsvp): void {
+    this.fireStoreService.saveRsvp(rsvp);
+  }
 }
