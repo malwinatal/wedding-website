@@ -58,5 +58,8 @@
     "FROM": "Your email",
     "EMAIL_ERROR": "Please insert a valid email!",
     "EMPTY_ERROR": "This field cannot be empty!"
+  },
+  "COMPANIES": {
+    "TITLE": "Recommended companies"
   }
 }

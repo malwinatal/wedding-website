@@ -1,1 +1,16 @@
-<p>companies works!</p>
+<div class="container">
+    <div class="row center-align">
+        <h5><b translate="COMPANIES.TITLE"></b></h5>
+    </div>
+    <div class="row">
+        <div class="col s6 m4 l3" *ngFor="let company of companyItems; index as i;">
+            <div class="card tooltipped squared" data-position="top" [attr.data-tooltip]="company.name">
+                <a [href]="company.web">
+                    <div class="card-image image">
+                        <img [src]="company.image">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
