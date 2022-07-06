@@ -8,8 +8,8 @@ import { AccountService } from '../services/account.service';
   styleUrls: ['./invitation.component.scss'],
 })
 export class InvitationComponent implements OnInit {
-  userAccount!: Account;
-  public guest: string = "human";
+  userAccount: Account | null;
+  public guest: string = 'human';
   public companions: string = 'with your cats';
 
   constructor(accountService: AccountService) {
@@ -17,6 +17,6 @@ export class InvitationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.guest = this.userAccount.invitationName;
+    this.guest = this.userAccount!.invitationName;
   }
 }

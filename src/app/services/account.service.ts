@@ -6,16 +6,16 @@ import { Account } from '../models/Account';
 })
 export class AccountService {
   private _loggedIn: boolean = false;
-  private _account!: Account;
+  private _account: Account | null = null;
 
   constructor() {}
 
-  set account(account: Account) {
+  set account(account: Account | null) {
     this._loggedIn = account != null;
     this._account = account;
   }
 
-  get account(): Account {
+  get account(): Account | null {
     return this._account;
   }
 
@@ -24,6 +24,6 @@ export class AccountService {
   }
 
   get accountId(): string {
-    return this._account?.id;
+    return this.account!.id;
   }
 }

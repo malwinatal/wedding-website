@@ -30,7 +30,7 @@ export class ContactComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.emailForm.get('name')?.setValue(this.as.account.invitationName);
+    this.emailForm.get('name')?.setValue(this.as.account!.invitationName);
     this.emailForm.get('name')?.disable();
     this.fs
       .getSensitiveInformation()
