@@ -26,6 +26,7 @@ import { CookieService } from 'ngx-cookie-service';
 import { MapComponent } from './location/map/map.component';
 import { EmailService } from './services/email.service';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FootnoteComponent } from './footnote/footnote.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -46,6 +47,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     CompaniesComponent,
     MapComponent,
+    FootnoteComponent,
   ],
   imports: [
     BrowserModule,
