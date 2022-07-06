@@ -54,7 +54,6 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
 
     this.instances = M.Chips.init(elems, {
       placeholder: 'Add tag',
-      secondaryPlaceholder: '+tag',
       onChipAdd: () => this.updateChips(),
       onChipDelete: () => this.updateChips(),
     });
