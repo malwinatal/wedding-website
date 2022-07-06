@@ -7,6 +7,7 @@ $primary-color-dark: color("blue-grey", "darken-4") !default;
 $secondary-color: $primary-color !default;
 
 $chip-selected-color: $primary-color-dark;
+$link-color: $primary-color-light;
 
 @import 'materialize-css/sass/materialize.scss';
 

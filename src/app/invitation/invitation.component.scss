@@ -1,4 +1,5 @@
 @import 'materialize-css/sass/materialize.scss';
+@import '../../styles.scss';
 
 .welcome {
     height: 100vh;
@@ -36,6 +37,11 @@
 
             .text-on-image {
                 background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            a {
+                color: color("blue-grey", "darken-4");
+                font-weight: bold;
             }
             
             h2 {
