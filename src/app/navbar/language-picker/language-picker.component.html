@@ -1,0 +1,28 @@
+<ul>
+  <li>
+    <a
+      class="btn-floating btn-small waves-effect waves-light"
+      (click)="togglePicker()"
+    >
+      <span class="fi" [ngClass]="'fi-' + selectedLang"></span>
+    </a>
+  </li>
+  <li>
+    <a
+      class="btn-floating btn-small waves-effect waves-light scale-transition"
+      [class.scale-in]="isVisible"
+      [class.scale-out]="!isVisible"
+      (click)="changeLanguage(otherLangs[0])"
+      ><span class="fi" [ngClass]="'fi-' + otherLangs[0]"></span
+    ></a>
+  </li>
+  <li>
+    <a
+      class="btn-floating btn-small waves-effect waves-light scale-transition"
+      [class.scale-in]="isVisible"
+      [class.scale-out]="!isVisible"
+      (click)="changeLanguage(otherLangs[1])"
+      ><span class="fi" [ngClass]="'fi-' + otherLangs[1]"></span
+    ></a>
+  </li>
+</ul>

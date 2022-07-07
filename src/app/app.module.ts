@@ -27,6 +27,7 @@ import { MapComponent } from './location/map/map.component';
 import { EmailService } from './services/email.service';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { FootnoteComponent } from './footnote/footnote.component';
+import { LanguagePickerComponent } from './navbar/language-picker/language-picker.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -48,6 +49,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CompaniesComponent,
     MapComponent,
     FootnoteComponent,
+    LanguagePickerComponent,
   ],
   imports: [
     BrowserModule,
