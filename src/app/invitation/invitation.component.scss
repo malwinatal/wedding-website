@@ -2,16 +2,18 @@
 @import '../../styles.scss';
 
 .welcome {
-    height: 100vh;
     padding-top: 0;
 
     .cover {
-        height: 40%;
+        height: 60vh;
         width: 100%;
         .background {
             position: relative;
             height: 100%;
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             ::before {    
                 background-size: cover;
                 content: "";
@@ -36,7 +38,7 @@
             }
 
             .text-on-image {
-                background-color: rgba(255, 255, 255, 0.1);
+                background-color: rgba(255, 255, 255, 0.25);
             }
 
             a {
@@ -52,7 +54,6 @@
     }
     
     .invitation {
-        height: 60%;
         width: 100%;
     }
 }

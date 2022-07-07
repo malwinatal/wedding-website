@@ -11,8 +11,8 @@ export class CompaniesComponent implements OnInit, AfterViewInit {
   public companyItems = [
     {
       "name": "Malwida",
-      "image": "../../assets/images/beach_square.jpg",
-      "web": "https://www.magicflashphoto.com"
+      "image": "../../assets/images/logo_draft.png",
+      "web": "localhost:4200"
     },
     {
       "name": "Magic Flash Photo",

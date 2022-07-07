@@ -11,32 +11,38 @@ export class ScheduleComponent implements OnInit {
     {
       "time": "15:00",
       "name": "welcome",
-      "translation": "SCHEDULE.WELCOME"
+      "translation": "SCHEDULE.WELCOME",
+      "icon": "fa-martini-glass"
     },
     {
       "time": "15:30",
       "name": "ceremony",
-      "translation": "SCHEDULE.CEREMONY"
+      "translation": "SCHEDULE.CEREMONY",
+      "icon": "fa-heart"
     },
     {
       "time": "16:00",
       "name": "meal",
-      "translation": "SCHEDULE.MEAL"
+      "translation": "SCHEDULE.MEAL",
+      "icon": "fa-utensils"
     },
     {
       "time": "20:00",
       "name": "grill",
-      "translation": "SCHEDULE.GRILL"
+      "translation": "SCHEDULE.GRILL",
+      "icon": "fa-fire"
     },
     {
       "time": "23:00",
       "name": "cake",
-      "translation": "SCHEDULE.CAKE"
+      "translation": "SCHEDULE.CAKE",
+      "icon": "fa-cake-candles"
     },
     {
       "time": "1:00",
       "name": "soup",
-      "translation": "SCHEDULE.SOUP"
+      "translation": "SCHEDULE.SOUP",
+      "icon": "fa-mug-hot"
     }
   ];
 
