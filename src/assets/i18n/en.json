@@ -22,12 +22,12 @@
     "DATE": "15:00 16th July 2023",
     "INVITE": {
       "DEAR": "Dear",
-      "HAPPY": "We're happy to invite {{ companions }} you for our wedding!",
-      "DETAILS": "The wedding will take place at 15:00 16th July 2023 in Oczyszczalnia Miejsce in Ludwików.",
+      "HAPPY": "We're happy to invite you {{ companions }} for our wedding!",
+      "DETAILS": "The wedding will take place at 15:00 16th July 2023 in Oczyszczalnia Miejsce near Warsaw.",
       "DRESSCODE": "Dress code",
       "BUSINESSCASUAL": "Business Casual, flat shoes recommended.",
-      "NOGIFTS": "We don't expect gifts from you, just your presence!",
-      "HOWEVER": "But if you want, please give us money and animal food which we can donate to animal shelter."
+      "NOGIFTS": "We don't expect any gifts from you, just your presence!",
+      "HOWEVER": "But if you want to give us something, please us something easily transportable like money. Or animal food which we will hapilly donate to animal shelter."
     }
   },
   "LOCATION": {

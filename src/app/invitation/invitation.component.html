@@ -1,5 +1,5 @@
 <div class="welcome">
-    <div  class="cover valign-wrapper">
+    <div class="cover valign-wrapper">
         <div class="background">
             <div class="container text-on-image">
                 <h2 class="row center-align blue-grey-text text-darken-4">
@@ -22,10 +22,11 @@
     </div>
     <div class="invitation">
         <div class="container">
-            <h6 class="row center-align"><span translate="INVITATION.INVITE.DEAR"></span><span> {{guest}},</span></h6>
-            <div class="row center-align" >
-                <b class="blue-grey-text text-darken-3" translate="INVITATION.INVITE.HAPPY" [translateParams]="{ companions: companions }"></b>
-            </div>
+            <h5 class="row center-align"><span translate="INVITATION.INVITE.DEAR"></span><span> {{guest}},</span></h5>
+            <h6 class="row center-align">
+                <b class="blue-grey-text text-darken-3" translate="INVITATION.INVITE.HAPPY"
+                    [translateParams]="{ companions: companions }"></b>
+            </h6>
             <div class="row center-align" [innerHTML]="'INVITATION.INVITE.DETAILS' | translate"></div>
             <div class="row center-align">
                 <span translate="INVITATION.INVITE.DRESSCODE"></span>
@@ -36,37 +37,37 @@
                     <i class="fa-brands fa-black-tie fa-stack-1x"></i>
                 </span> -->
             </div>
-            <div class="row center-align">
+            <h6 class="row center-align">
                 <b class="blue-grey-text text-darken-3" translate="INVITATION.INVITE.NOGIFTS">
                     <span>&nbsp;</span>
                     <span><i class="fa-solid fa-heart"></i></span>
-            </b>
-        </div>
-        <div class="valign-wrapper">
-            <div class="row center-align" translate="INVITATION.INVITE.HOWEVER">
-                <div class="center-align">
-                  <p>
-                    <span>
-                        <i class="fa-solid fa-piggy-bank fa-1x"></i>
-                        <i class="fa-solid fa-euro-sign fa-1x"></i>
-                    <span> &nbsp; </span>
-                        <i class="fa-solid fa-paw fa-1x"></i>
-                        <i class="fa-solid fa-bowl-food fa-1sx"></i>
-                    </span>
-                    <span> &nbsp; </span>
-                    <span class="fa-stack" style="vertical-align: center;">
-                        <i class="fa fa-ban fa-stack-2x"></i>
-                        <i class="fa-solid fa-gift fa-stack-1x"></i>
-                    </span>
-                    <span> &nbsp; </span>
-                    <span class="fa-stack" style="vertical-align: center;">
-                        <i class="fa fa-ban fa-stack-2x"></i>
-                        <i class="fa-solid fa-spa fa-stack-1x"></i>
-                    </span>
-                  </p>
+                </b>
+            </h6>
+            <div class="valign-wrapper">
+                <div class="row center-align" translate="INVITATION.INVITE.HOWEVER">
+                    <div class="center-align blue-grey-text text-darken-3">
+                        <p>
+                            <span>
+                                <i class="fa-solid fa-piggy-bank fa-1x"></i>
+                                <i class="fa-solid fa-euro-sign fa-1x"></i>
+                                <span> &nbsp; </span>
+                                <i class="fa-solid fa-paw fa-1x"></i>
+                                <i class="fa-solid fa-bowl-food fa-1x"></i>
+                            </span>
+                            <span> &nbsp; </span>
+                            <span class="fa-stack" style="vertical-align: center;">
+                                <i class="fa fa-ban fa-stack-2x"></i>
+                                <i class="fa-solid fa-gift fa-stack-1x"></i>
+                            </span>
+                            <span> &nbsp; </span>
+                            <span class="fa-stack" style="vertical-align: center;">
+                                <i class="fa fa-ban fa-stack-2x"></i>
+                                <i class="fa-solid fa-spa fa-stack-1x"></i>
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
         </div>
     </div>
