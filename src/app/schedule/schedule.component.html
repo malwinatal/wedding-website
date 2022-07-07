@@ -14,7 +14,8 @@
                             <p translate="{{item.translation}}"></p>
                         </div>
                     </div>
-                    <div class="timeline-badge blue-grey darken-2 white-text"><i class="fa-solid {{item.icon}}"></i>
+                    <div class="timeline-badge blue-grey darken-2 white-text" [ngClass]="{'pulse': item.icon === 'fa-heart'}">
+                        <i class="fa-solid {{item.icon}}"></i>
                     </div>
                 </div>
             </div>
