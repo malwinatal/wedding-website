@@ -34,7 +34,6 @@ export class CompaniesComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     var elems = document.querySelectorAll('.tooltipped');
-    console.log(elems)
     M.Tooltip.init(elems, {});
   }
 
