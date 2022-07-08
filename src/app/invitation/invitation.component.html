@@ -2,20 +2,27 @@
     <div class="cover valign-wrapper">
         <div class="background">
             <div class="container text-on-image">
-                <h2 class="row center-align blue-grey-text text-darken-4">
+                <h1 class="row center-align blue-grey-text text-darken-4">
                     <div translate="INVITATION.NAMES"></div>
-                </h2>
+                </h1>
 
                 <div class="row center-align">
-                    <h5>
-                        <a class="col s12 m5" routerLink="/home" fragment="location">
-                            <span translate="INVITATION.PLACE"></span>
-                        </a>
-                        <span class="col s2 m2 hide-on-small-only"> | </span>
+                    <h5 class="link">
+                        <span class="col s12 m5">
+                            <a routerLink="/home" fragment="location">
+                                <span translate="INVITATION.PLACE"></span>
+                            </a>
+                        </span>
+
+                        <span class="col s2 m2 hide-on-small-only separator"> | </span>
                         <span class="row hide-on-med-and-up"> - </span>
-                        <a class="col s12 m5" routerLink="/home" fragment="schedule">
-                            <span translate="INVITATION.DATE"></span>
-                        </a>
+
+                        <span class="col s12 m5">
+                            <a routerLink="/home" fragment="schedule">
+                                <span translate="INVITATION.DATE"></span>
+                            </a>
+                        </span>
+
                     </h5>
                 </div>
             </div>
