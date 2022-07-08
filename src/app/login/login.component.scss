@@ -1,3 +1,7 @@
+@import "materialize-css/sass/components/color-variables";
+@import "materialize-css/sass/components/color-classes";
+@import 'materialize-css/sass/components/variables';
+
 .login {
     height: 100vh;
 
@@ -12,12 +16,30 @@
         background-size: cover;
 
         .text-on-image {
-            background-color: rgba(255, 255, 255, 0.25);
+            background-color: rgba(255, 255, 200, 0.35);
         }
     }
     
     h2 {
         font-weight: bold;
+    }
+
+    .pass {
+        row {
+            margin-bottom: 0;
+        }
+        
+        input {
+            font-family: 'Courier New', monospace;
+        }
+
+        @media #{$small-and-down} {
+            margin-top: 20vh;
+        }
+    
+        @media #{$medium-and-up} {
+            margin-top: 30vh;
+        }
     }
 
     .language {
