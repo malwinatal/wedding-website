@@ -1,1 +1,56 @@
-<p>countries works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6">
+      <h4>Poland</h4>
+      <div class="carousel carousel-slider center z-depth-1" #carousel>
+        <div class="carousel-item card" *ngFor="let item of polandData">
+          <div class="card-image">
+            <img class="activator" [src]="item.img" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"
+              >{{ item.title
+              }}<i class="material-icons right">more_vert</i></span
+            >
+            <p class="activator">{{ item.shortDescription }}</p>
+            <p><a *ngIf="item.link" [href]="item.link">more</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"
+              >{{ item.title }}<i class="material-icons right">close</i></span
+            >
+            <p>
+              {{ item.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <h4>Portugal</h4>
+      <div class="carousel carousel-slider center z-depth-1" #carousel2>
+        <div class="carousel-item card" *ngFor="let item of portugalData">
+          <div class="card-image">
+            <img class="activator" [src]="item.img" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"
+              >{{ item.title
+              }}<i class="material-icons right">more_vert</i></span
+            >
+            <p class="activator">{{ item.shortDescription }}</p>
+            <p><a *ngIf="item.link" [href]="item.link">more</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"
+              >{{ item.title }}<i class="material-icons right">close</i></span
+            >
+            <p>
+              {{ item.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
