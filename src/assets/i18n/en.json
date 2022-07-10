@@ -53,6 +53,10 @@
     "CAKE": "Time for wedding cake!",
     "SOUP": "Night soup"
   },
+  "PICTURES": {
+    "TITLE": "Pictures",
+    "AVAILABLE": "Pictures from the wedding will be available here."
+  },
   "CONTACT": {
     "TITLE": "Contacts",
     "TEXT": "In case you have any questions please ask us through WhatsApp, SMS, email or the form bellow.",
