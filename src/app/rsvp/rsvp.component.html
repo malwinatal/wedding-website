@@ -5,7 +5,7 @@
         <div class="card-content">
           <div class="center-align blue-grey-text text-darken-4">
             <h5>
-              <span>RSVP</span>
+              <span translate="RSVP.TITLE"></span>
               <span>&nbsp;</span>
               <span><i class="fa-solid fa-envelope"></i></span>
               <span>&nbsp;</span>
@@ -18,16 +18,16 @@
                 <p>
                   <label>
                     <input type="checkbox" class="filled-in" formControlName="going"/>
-                    <span><b>Going?</b></span>
+                    <span><b translate="RSVP.GOING"></b></span>
                   </label>
                 </p>
               </div>
               <div class="row">
-                <b>Please choose your diet</b>
+                <b translate="RSVP.DIET"></b>
                 <p>
                   <label>
                     <input name="diet" type="radio" [value]="Diets.PLANT" formControlName="diet"/>
-                    <span>Plant based meal</span>
+                    <span translate="RSVP.PLANT"></span>
                     <span>&nbsp;</span>
                     <i class="fa-solid fa-seedling fa-2x"></i>
                   </label>
@@ -35,14 +35,14 @@
                 <p>
                   <label>
                     <input name="diet" type="radio" [value]="Diets.MEAT" formControlName="diet"/>
-                    <span>Meat based meal</span>
+                    <span translate="RSVP.MEAT"></span>
                     <span>&nbsp;</span>
                     <i class="fa-solid fa-cow fa-2x"></i>
                   </label>
                 </p>
               </div>
               <div class="row">
-                <b>Any allergies or dietary restrictions?</b>
+                <b translate="RSVP.ALLERGIES"></b>
                 <div class="chips chips-placeholder text-white"></div>
               </div>
             </div>

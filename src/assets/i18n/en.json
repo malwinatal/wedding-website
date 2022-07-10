@@ -30,6 +30,14 @@
       "HOWEVER": "But if you want to give us something, please us something easily transportable like money. Or animal food which we will hapilly donate to animal shelter."
     }
   },
+  "RSVP": {
+    "TITLE": "RSVP",
+    "GOING": "Going?",
+    "DIET": "Please choose your diet",
+    "PLANT": "Plant based meal",
+    "MEAT": "Meat based meal",
+    "ALLERGIES":  "Any allergies or dietary restrictions?"
+  },
   "LOCATION": {
     "BUTTON_MAPS": "Go to maps",
     "BUTTON_WAZE": "Go to waze",
