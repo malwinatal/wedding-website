@@ -6,7 +6,8 @@ $primary-color-light: color("blue-grey", "base") !default;
 $primary-color-dark: color("blue-grey", "darken-4") !default;
 $secondary-color: $primary-color !default;
 
-$chip-selected-color: $primary-color-dark;
+$chip-selected-color: $primary-color-light;
+$chip-bg-color: $primary-color-dark;
 $link-color: $primary-color-light;
 
 @import 'materialize-css/sass/materialize.scss';
@@ -14,8 +15,20 @@ $link-color: $primary-color-light;
 /* You can add global styles to this file, and also import other style files */
 body {
 
+    // CHIPS
+
+    .chip {
+        color: white;
+        height: auto !important;
+        word-break: break-word;
+    }
+
     //FONTS
     font-family: 'Courier New', monospace;
+
+    input {
+        font-family: 'Courier New', monospace;
+    }
 
     h5 {
         color: $primary-color
