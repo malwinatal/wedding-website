@@ -1,6 +1,42 @@
 form {
     margin-top: 3rem;
 
+    .collapsible {
+      border: 0;
+
+      .collapsible-header {
+        border: 0;
+        justify-content: center;
+        transition: flex 2s;
+
+        .content {
+          flex: 1;
+          max-width: fit-content;
+        }
+
+
+        .dummy {
+          flex: 0;
+          transition: flex 1s;
+        }
+
+        .active {
+          flex: auto !important;
+        }
+
+        // .animation {
+        //   display: flex;
+        //   transition: all 2s ease-in-out 2s;
+        //   align-self: center;
+
+        //   &.active {
+        //     align-self: start;
+        //   }
+        // }
+      }
+    }
+
+
     .chips {
         overflow: auto;
         height: 10rem;
@@ -8,7 +44,7 @@ form {
 
         //z-depth-1 with improvements
         box-shadow: 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 0px -1px rgb(0 0 0 / 12%), 0 0px 3px 0 rgb(0 0 0 / 20%);
-        
+
         padding: 0.5rem;
         //outline: none;
 
@@ -17,4 +53,9 @@ form {
             box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 30%);
         }
     }
+}
+
+@keyframes mymove {
+  from {justify-content: center;}
+  to {justify-content: start;}
 }

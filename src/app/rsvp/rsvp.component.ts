@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit, AfterViewChecked } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormArray, FormBuilder, FormGroup } from '@angular/forms';
 import { Diets } from '../models/Diets';
 import { Rsvp } from '../models/Rsvp';
 import { AccountService } from '../services/account.service';
@@ -14,8 +14,9 @@ import * as M from 'materialize-css';
 })
 export class RsvpComponent implements OnInit, AfterViewChecked {
   Diets = Diets;
-  guestForms: any;
+  guestForms!: FormArray<FormGroup>;
   instances: M.Chips[] = [];
+  collapsibleInstances: M.Collapsible[] = [];
 
   private chipsInitialized = false;
 
@@ -29,6 +30,7 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
   ngAfterViewChecked(): void {
     if (this.guestForms && !this.chipsInitialized) {
       this.initializeChips();
+      this.initializeCollapsibles();
       this.chipsInitialized = true;
     }
   }
@@ -58,6 +60,18 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
       onChipDelete: () => this.updateChips(),
     });
     this.setInitialChips();
+  }
+
+  initializeCollapsibles(): void {
+    var elems = document.querySelectorAll('.collapsible');
+
+    this.collapsibleInstances = M.Collapsible.init(elems);
+    this.collapsibleInstances.forEach((instance, index) => {
+      const going = this.guestForms.at(index).value.going as boolean;
+      if (going) {
+        instance.open(0);
+      }
+    });
   }
 
   adaptGuestToFormGroup(guest: Rsvp): FormGroup {
@@ -90,5 +104,11 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
 
   saveForm(form: Rsvp): void {
     this.rsvpService.saveRsvp(form);
+  }
+
+  toggleGoing(form: FormGroup, event: any): void {
+    if (event.target.localName !== 'span') {
+      form.patchValue({ going: !form.value.going });
+    }
   }
 }
