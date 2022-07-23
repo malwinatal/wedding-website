@@ -30,6 +30,6 @@ export class PicturesComponent implements OnInit, AfterViewInit {
       carouselInstance.next();
     }
     carouselInstance.dragged = 0;
-    setTimeout(() => this.autoplayCarousel(carouselInstance), 5000);
+    setTimeout(() => this.autoplayCarousel(carouselInstance), 3000);
   }
 }

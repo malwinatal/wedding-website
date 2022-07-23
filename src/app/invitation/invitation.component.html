@@ -7,35 +7,39 @@
                 </h1>
 
                 <div class="row center-align">
-                    <h5 class="link">
-                        <span class="col s12 m6">
+                    <div class="col s12 m6 link">
+                        <h5>
                             <a routerLink="/home" fragment="location">
                                 <span translate="INVITATION.PLACE"></span>
                             </a>
-                        </span>
+                        </h5>
+                        <p translate="INVITATION.WHERE"></p>
+                    </div>
+                    <div class="col s12 m6 link">
+                        <h5 class="row hide-on-med-and-up"> - </h5>
 
-                        <span class="row hide-on-med-and-up"> - </span>
-
-                        <span class="col s12 m6">
+                        <h5>
                             <a routerLink="/home" fragment="schedule">
                                 <span translate="INVITATION.DATE"></span>
                             </a>
-                        </span>
-
-                    </h5>
+                        </h5>
+                        <p translate="INVITATION.WHEN"></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="invitation">
         <div class="container">
-            <h5 class="row center-align"><span translate="INVITATION.INVITE.DEAR"></span><span> {{guest}},</span></h5>
+            <h5 class="row center-align dear"><span translate="INVITATION.INVITE.DEAR"></span><span> {{guest}},</span></h5>
             <h6 class="row center-align">
                 <b class="blue-grey-text text-darken-3" translate="INVITATION.INVITE.HAPPY"
                     [translateParams]="{ companions: companions }"></b>
             </h6>
-            <div class="row center-align" [innerHTML]="'INVITATION.INVITE.DETAILS' | translate"></div>
+            <!-- <div class="row center-align" [innerHTML]="'INVITATION.INVITE.DETAILS' | translate"></div> -->
             <div class="row center-align">
+                <span><i class="fa-solid fa-shirt"></i></span>
+                <span>&nbsp;</span>
                 <span translate="INVITATION.INVITE.DRESSCODE"></span>
                 <span> : </span>
                 <span translate="INVITATION.INVITE.BUSINESSCASUAL"></span>
