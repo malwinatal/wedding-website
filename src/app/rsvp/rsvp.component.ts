@@ -107,7 +107,7 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
   }
 
   toggleGoing(form: FormGroup, event: any): void {
-    if (event.target.localName !== 'span') {
+    if (event.target.localName !== 'span' && event.target.localName !== 'b') {
       form.patchValue({ going: !form.value.going });
     }
   }

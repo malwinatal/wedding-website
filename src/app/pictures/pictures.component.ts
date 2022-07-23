@@ -1,26 +1,40 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   selector: 'app-pictures',
   templateUrl: './pictures.component.html',
-  styleUrls: ['./pictures.component.scss']
+  styleUrls: ['./pictures.component.scss'],
 })
 export class PicturesComponent implements OnInit, AfterViewInit {
   @ViewChild('carouselPictures') carouselPictures!: ElementRef;
 
-  constructor() { }
+  timeoutHolder: any;
 
-  ngOnInit(): void {
-  }
+  constructor() {}
+
+  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    const carouselInstance = M.Carousel.init(this.carouselPictures.nativeElement, { });
+    const carouselInstance = M.Carousel.init(
+      this.carouselPictures.nativeElement
+    );
     this.autoplayCarousel(carouselInstance);
   }
 
   autoplayCarousel(carouselInstance: M.Carousel): void {
-    carouselInstance.next();
-    setTimeout(() => this.autoplayCarousel(carouselInstance), 3000);
+    if (!carouselInstance.dragged) {
+      carouselInstance.next();
+    }
+    carouselInstance.dragged = 0;
+    this.timeoutHolder = setTimeout(
+      () => this.autoplayCarousel(carouselInstance),
+      5000
+    );
   }
-
 }
