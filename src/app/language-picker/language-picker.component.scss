@@ -1,8 +1,12 @@
-ul {
-  display: flex;
-  flex-direction: column;
-}
-
-li {
+.lang-picker {
   height: 3.5rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  li {
+    height: 3.5rem;
+  }
 }
