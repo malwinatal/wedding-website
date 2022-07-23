@@ -14,7 +14,7 @@ export class PicturesComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    const carouselInstance = M.Carousel.init(this.carouselPictures.nativeElement, {indicators: true});
+    const carouselInstance = M.Carousel.init(this.carouselPictures.nativeElement, { });
     this.autoplayCarousel(carouselInstance);
   }
 
