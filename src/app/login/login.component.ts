@@ -23,12 +23,7 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-    if (this.cookieService.check('code')) {
-      const code = this.cookieService.get('code');
-      this.login(code);
-    }
-  }
+  ngOnInit(): void {}
 
   login(code: string): void {
     this.fs.getUserAccount(code).subscribe((result) => {
