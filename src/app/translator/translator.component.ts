@@ -51,6 +51,11 @@ export class TranslatorComponent implements OnInit {
       "pt": "Prazer de conhecer"
     },
     {
+      "en": "Very tasty",
+      "pl": "Bardzo smaczne",
+      "pt": "Muito delicioso"
+    },
+    {
       "en": "Cheers!",
       "pl": "Na zdrowie!",
       "pt": "Saude!"
