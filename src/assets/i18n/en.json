@@ -13,6 +13,7 @@
     "SCHEDULE": "Schedule",
     "PICTURES": "Pictures",
     "COUNTRIES": "Our countries",
+    "TRANSLATOR": "Little translator",
     "CONTACT": "Contact",
     "COMPANIES": "Companies"
   },
@@ -56,6 +57,9 @@
   "PICTURES": {
     "TITLE": "Pictures",
     "AVAILABLE": "Pictures from the wedding will be available here."
+  },
+  "TRANSLATOR": {
+    "TITLE": "Little translator"
   },
   "CONTACT": {
     "TITLE": "Contacts",
