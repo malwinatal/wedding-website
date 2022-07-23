@@ -7,20 +7,26 @@
     <div class="col s12">
         <div class="card">
             <div class="card-content">
-                <div class="center-align row">
-                    <div class="col s6">
-                        <app-language-picker [selectedLang]="langLeft" (changeLang)="changeLangLeft($event)"></app-language-picker>
-                        <div *ngFor="let sentence of sentences; index as i;">
-                            {{  sentence[langLeft] }}
-                        </div>
-                    </div>
-                    <div class="col s6">
-                        <app-language-picker [selectedLang]="langRight" (changeLang)="changeLangRight($event)"></app-language-picker>
-                        <div *ngFor="let sentence of sentences; index as i;">
-                            <div>{{ sentence[langRight] }}</div>
-                        </div>
-                    </div>
-                </div>
+                <table class="highlight centered">
+                    <thead>
+                      <tr>
+                          <th>
+                            <app-language-picker class="center-align" [selectedLang]="langLeft" (changeLang)="changeLangLeft($event)">
+                            </app-language-picker>
+                          </th>
+                          <th>
+                            <app-language-picker class="center-align" [selectedLang]="langRight" (changeLang)="changeLangRight($event)">
+                            </app-language-picker>
+                          </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let sentence of sentences; index as i;">
+                        <td>{{  sentence[langLeft] }}</td>
+                        <td>{{ sentence[langRight] }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
         </div>
     </div>

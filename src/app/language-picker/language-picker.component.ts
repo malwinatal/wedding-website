@@ -10,14 +10,15 @@ const allLangs = ['gb', 'pl', 'pt'];
 export class LanguagePickerComponent implements OnInit {
   @Input() selectedLang!: string;
   @Output() changeLang = new EventEmitter<string>();
-  
+
+  selectedFlag!: string;
   otherLangs: string[] = [];
   isVisible = false;
 
   constructor() {}
 
   ngOnInit(): void {
-    this.selectedFlag();
+    this.setFlags();
   }
 
   togglePicker(): void {
@@ -27,16 +28,13 @@ export class LanguagePickerComponent implements OnInit {
   changeLanguage(lang: string): void {
     this.togglePicker();
     this.selectedLang = lang;
-    this.selectedFlag();
-    this.changeLang.emit(lang);
+    this.setFlags();
+    this.changeLang.emit(lang == 'gb' ? 'en' : lang);
   }
 
-  selectedFlag() {
-    console.log(this.selectedLang)
-    if (this.selectedLang != 'pt' && this.selectedLang != 'pl') {
-      this.selectedLang = 'gb';
-    }
+  setFlags() {
+    this.selectedFlag = (this.selectedLang != 'pt' && this.selectedLang != 'pl') ? 'gb' : this.selectedLang; 
 
-    this.otherLangs = allLangs.filter((l) => l != this.selectedLang);
+    this.otherLangs = allLangs.filter((l) => l != this.selectedFlag);
   }
 }

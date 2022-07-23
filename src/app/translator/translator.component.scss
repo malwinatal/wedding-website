@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+
+    th, td {
+        width: 50%;
+    }
+}
+
+th {
+    max-height: 3rem;
+}

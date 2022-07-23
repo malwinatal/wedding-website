@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
     private as: AccountService,
     private translate: TranslateService
   ) {
-    this.selectedLang = this.translate.currentLang;
+    this.selectedLang = this.translate.currentLang ? this.translate.currentLang : 'en';
   }
 
   ngOnInit(): void {
@@ -49,7 +49,8 @@ export class NavbarComponent implements OnInit {
   }
 
   changeLang(lang: string) {
-    this.translate.use(lang == 'gb' ? 'en' : lang);
+    this.translate.use(lang);
+    this.cookieService.set('lang', lang);
     this.selectedLang = lang;
   }
 }

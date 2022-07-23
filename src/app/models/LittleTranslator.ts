@@ -1,6 +1,6 @@
 export class LittleTranslator {
   constructor(
-    public gb: string,
+    public en: string,
     public pl: string,
     public pt: string
   ) {}
