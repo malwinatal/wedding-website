@@ -1,8 +1,11 @@
 <div class="container">
   <div class="row" *ngIf="guestForms">
-    <div class="col m12 l6" *ngFor="let guest of guestForms.controls; index as i;">
+    <div
+      class="col m12 l6"
+      *ngFor="let guest of guestForms.controls; index as i"
+    >
       <div class="card">
-        <div class="card-content">
+        <div class="card-panel">
           <div class="center-align blue-grey-text text-darken-4">
             <h5>
               <span translate="RSVP.TITLE"></span>
@@ -10,41 +13,66 @@
               <span><i class="fa-solid fa-envelope"></i></span>
               <span>&nbsp;</span>
             </h5>
-            <h6><b>{{guest.value.name}} {{guest.value.surname}}</b></h6>
+            <h6>
+              <b>{{ guest.value.name }} {{ guest.value.surname }}</b>
+            </h6>
           </div>
           <form [formGroup]="guest">
-            <div class="container">
-              <div class="row">
-                <p>
-                  <label>
-                    <input type="checkbox" class="filled-in" formControlName="going"/>
-                    <span><b translate="RSVP.GOING"></b></span>
-                  </label>
-                </p>
-              </div>
-              <div class="row">
-                <b translate="RSVP.DIET"></b>
-                <p>
-                  <label>
-                    <input name="diet" type="radio" [value]="Diets.PLANT" formControlName="diet"/>
-                    <span translate="RSVP.PLANT"></span>
-                    <span>&nbsp;</span>
-                    <i class="fa-solid fa-seedling fa-2x"></i>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input name="diet" type="radio" [value]="Diets.MEAT" formControlName="diet"/>
-                    <span translate="RSVP.MEAT"></span>
-                    <span>&nbsp;</span>
-                    <i class="fa-solid fa-cow fa-2x"></i>
-                  </label>
-                </p>
-              </div>
-              <div class="row">
-                <b translate="RSVP.ALLERGIES"></b>
-                <div class="chips chips-placeholder text-white"></div>
-              </div>
+            <div class="">
+              <ul class="collapsible z-depth-0">
+                <li>
+                  <div
+                    class="collapsible-header"
+                    (click)="toggleGoing(guest, $event)"
+                  >
+                    <label class="content" [class.active]="guest.value.going">
+                      <input
+                        type="checkbox"
+                        class="filled-in"
+                        formControlName="going"
+                        (click)="$event.stopPropagation()"
+                      />
+                      <span><b translate="RSVP.GOING"></b></span>
+                    </label>
+                    <div class="dummy" [class.active]="guest.value.going"></div>
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <b translate="RSVP.DIET"></b>
+                      <p>
+                        <label>
+                          <input
+                            name="diet"
+                            type="radio"
+                            [value]="Diets.PLANT"
+                            formControlName="diet"
+                          />
+                          <span translate="RSVP.PLANT"></span>
+                          <span>&nbsp;</span>
+                          <i class="fa-solid fa-seedling fa-2x"></i>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input
+                            name="diet"
+                            type="radio"
+                            [value]="Diets.MEAT"
+                            formControlName="diet"
+                          />
+                          <span translate="RSVP.MEAT"></span>
+                          <span>&nbsp;</span>
+                          <i class="fa-solid fa-cow fa-2x"></i>
+                        </label>
+                      </p>
+                    </div>
+                    <div>
+                      <b translate="RSVP.ALLERGIES"></b>
+                      <div class="chips chips-placeholder text-white"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </form>
         </div>
