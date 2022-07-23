@@ -14,8 +14,6 @@ import {
 export class PicturesComponent implements OnInit, AfterViewInit {
   @ViewChild('carouselPictures') carouselPictures!: ElementRef;
 
-  timeoutHolder: any;
-
   constructor() {}
 
   ngOnInit(): void {}
@@ -32,9 +30,6 @@ export class PicturesComponent implements OnInit, AfterViewInit {
       carouselInstance.next();
     }
     carouselInstance.dragged = 0;
-    this.timeoutHolder = setTimeout(
-      () => this.autoplayCarousel(carouselInstance),
-      5000
-    );
+    setTimeout(() => this.autoplayCarousel(carouselInstance), 5000);
   }
 }
