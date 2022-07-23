@@ -19,7 +19,9 @@
   },
   "INVITATION": {
     "NAMES": "Malwina & David",
+    "WHERE": "Where?",
     "PLACE": "Oczyszczalnia Miejsce",
+    "WHEN": "When?",
     "DATE": "15:00 16th July 2023",
     "INVITE": {
       "DEAR": "Dear",
@@ -28,7 +30,7 @@
       "DRESSCODE": "Dress code",
       "BUSINESSCASUAL": "Business Casual, flat shoes recommended.",
       "NOGIFTS": "We don't expect any gifts from you, just your presence!",
-      "HOWEVER": "But if you want to give us something, please us something easily transportable like money. Or animal food which we will hapilly donate to animal shelter."
+      "HOWEVER": "But if you want to give us something, please give us something easily transportable like money. Or animal food which we will hapilly donate to animal shelter."
     }
   },
   "RSVP": {

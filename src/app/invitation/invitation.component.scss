@@ -47,6 +47,11 @@
                 span {
                     font-weight: bold;
                 }
+
+                p {
+                    text-transform: uppercase;
+                    margin-top: 0;
+                }
                 
                 a {
                     color: color("blue-grey", "darken-4");
@@ -64,5 +69,9 @@
     .invitation {
         width: 100%;
         line-height: 230%;
+
+        .dear {
+            text-transform: uppercase;
+        }
     }
 }
