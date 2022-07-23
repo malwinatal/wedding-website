@@ -13,23 +13,28 @@ import {
 })
 export class PicturesComponent implements OnInit, AfterViewInit {
   @ViewChild('carouselPictures') carouselPictures!: ElementRef;
+  carouselInstance!: M.Carousel;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    const carouselInstance = M.Carousel.init(
+    this.carouselInstance = M.Carousel.init(
       this.carouselPictures.nativeElement
     );
-    this.autoplayCarousel(carouselInstance);
+    this.autoplayCarousel(this.carouselInstance);
   }
 
   autoplayCarousel(carouselInstance: M.Carousel): void {
-    if (!carouselInstance.dragged) {
+    if (!carouselInstance.dragged && !carouselInstance.pressed) {
       carouselInstance.next();
     }
-    carouselInstance.dragged = 0;
     setTimeout(() => this.autoplayCarousel(carouselInstance), 3000);
+  }
+
+  carouselReset() {
+    this.carouselInstance.dragged = 0;
+    this.carouselInstance.pressed = false;
   }
 }
