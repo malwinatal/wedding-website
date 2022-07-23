@@ -27,7 +27,7 @@ import { MapComponent } from './location/map/map.component';
 import { EmailService } from './services/email.service';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { FootnoteComponent } from './footnote/footnote.component';
-import { LanguagePickerComponent } from './navbar/language-picker/language-picker.component';
+import { LanguagePickerComponent } from './language-picker/language-picker.component';
 import { TranslatorComponent } from './translator/translator.component';
 
 export function HttpLoaderFactory(http: HttpClient) {

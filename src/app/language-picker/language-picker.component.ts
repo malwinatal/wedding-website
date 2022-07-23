@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 const allLangs = ['gb', 'pl', 'pt'];
 
@@ -9,14 +8,15 @@ const allLangs = ['gb', 'pl', 'pt'];
   styleUrls: ['./language-picker.component.scss'],
 })
 export class LanguagePickerComponent implements OnInit {
+  @Input() selectedLang!: string;
+  @Output() changeLang = new EventEmitter<string>();
+  
   otherLangs: string[] = [];
-  selectedLang: string = 'gb';
   isVisible = false;
 
-  constructor(private translate: TranslateService) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.selectedLang = this.translate.currentLang;
     this.selectedFlag();
   }
 
@@ -26,12 +26,13 @@ export class LanguagePickerComponent implements OnInit {
 
   changeLanguage(lang: string): void {
     this.togglePicker();
-    this.translate.use(lang == 'gb' ? 'en' : lang);
     this.selectedLang = lang;
     this.selectedFlag();
+    this.changeLang.emit(lang);
   }
 
   selectedFlag() {
+    console.log(this.selectedLang)
     if (this.selectedLang != 'pt' && this.selectedLang != 'pl') {
       this.selectedLang = 'gb';
     }

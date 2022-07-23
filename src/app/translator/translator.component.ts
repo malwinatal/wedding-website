@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LittleTranslator } from '../models/LittleTranslator';
 
 @Component({
   selector: 'app-translator',
@@ -7,115 +8,109 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TranslatorComponent implements OnInit {
   
-  public sentences = [
+  public sentences: Array<LittleTranslator> = [
     {
-      "name": "goodMorning",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"
+      "gb": "Good morning",
+      "pl": "Dzień dobry",
+      "pt": "Bom dia"
     },
     {
-      "name": "goodAfternoon",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"
+      "gb": "Good afternoon",
+      "pl": "Dzień dobry",
+      "pt": "Boa tarde"
     },
     {
-      "name": "goodEvening",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"
+      "gb": "Good evening",
+      "pl": "Dobry wieczór",
+      "pt": "Boa noite"
     },
     {
-      "name": "hi",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "Hi",
+      "pl": "Cześć",
+      "pt": "Ola"   
     },
     {
-      "name": "thankYou",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "Thank you",
+      "pl": "Dziękuję",
+      "pt": "Obrigado" 
     },
     {
-      "name": "imSorry",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "I'm sorry",
+      "pl": "Przepraszam",
+      "pt": "Desculpe" 
     },
     {
-      "name": "execuseMe",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "Exuse me",
+      "pl": "Przepraszam",
+      "pt": "Com licenca" 
     },
     {
-      "name": "niceToMeetYou",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "Nice to meet you",
+      "pl": "Miło poznać",
+      "pt": "Prazer de conhecer"
     },
     {
-      "name": "cheers",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "Cheers!",
+      "pl": "Na zdrowie!",
+      "pt": "Saude!"
     },
     {
-      "name": "congratulations",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "Congratulations",
+      "pl": "Gratulacje",
+      "pt": "Parabens"
     },
     {
-      "name": "yes",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "Yes",
+      "pl": "Tak",
+      "pt": "Sim"
     },
     {
-      "name": "no",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "No",
+      "pl": "Nie",
+      "pt": "Nao"
     },
     {
-      "name": "noThankYou",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "No, thank you",
+      "pl": "Nie, dziękuję",
+      "pt": "Nao, obrigada"  
     },
     {
-      "name": "bathroom",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "Where is a bathroom?",
+      "pl": "Gdzie jest łazienka?",
+      "pt": "Onde e casa de banho?"
     },
     {
-      "name": "wine",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
+      "gb": "Can I have a cup of wine please?",
+      "pl": "Poproszę lampkę wina",
+      "pt": "Queria um copo de vinho por favour"
+    },
+    { 
+      "gb": "Can I have one beer please?",
+      "pl": "Poproszę jedno piwo",
+      "pt": "Uma cerveja por favour" 
     },
     {
-      "name": "beer",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"    
-    },
-    {
-      "name": "vodka",
-      "translationEn": "Good morning",
-      "translationPl": "Dzień dobry",
-      "translationPt": "Bom dia"
+      "gb": "Vodka",
+      "pl": "Wódka",
+      "pt": "Vodka"
     }
     
   ];
 
+  langLeft: string = 'pl';
+  langRight: string = 'pt';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeLangLeft(lang: string): void {
+    this.langLeft = lang;    
+  }
+
+  changeLangRight(lang: string): void {
+    this.langRight = lang;
   }
 
 }
