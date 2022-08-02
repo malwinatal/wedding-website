@@ -20,7 +20,7 @@ export class ContactComponent implements OnInit {
     _honey: [''],
     _captcha: [''],
   });
-  info!: PersonalInfo;
+  info: PersonalInfo | undefined;
 
   constructor(
     private as: AccountService,

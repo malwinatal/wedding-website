@@ -14,7 +14,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            ::before {    
+            ::before {
                 background-size: cover;
                 content: "";
                 display: block;
@@ -25,20 +25,24 @@
                 height: 100%;
                 z-index: -2;
                 opacity: 0.6;
-            
+
                 @media #{$medium-and-down} {
                     background-image: url('../../assets/images/beach.jpg');
-                
+
                 }
-                
+
                 @media #{$large-and-up} {
                     background-image: url('../../assets/images/beach_cover.jpg');
-                
+
                 }
             }
 
             .text-on-image {
                 background-color: rgba(255, 255, 200, 0.35);
+
+                .bride-and-groom {
+                  font-family: 'fife', 'arial', sans-serif;
+                }
             }
 
             .link {
@@ -52,26 +56,30 @@
                     text-transform: uppercase;
                     margin-top: 0;
                 }
-                
+
                 a {
                     color: color("blue-grey", "darken-4");
                     text-decoration: underline;
                     font-weight: bold;
                 }
             }
-            
+
             h1 {
                 margin-bottom: 0;
             }
         }
     }
-    
+
     .invitation {
         width: 100%;
         line-height: 230%;
 
         .dear {
             text-transform: uppercase;
+        }
+
+        .icon {
+          vertical-align: middle;
         }
     }
 }

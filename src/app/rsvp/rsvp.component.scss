@@ -12,6 +12,7 @@ form {
         .content {
           flex: 1;
           max-width: fit-content;
+          margin-left: 1rem;
         }
 
 
@@ -23,16 +24,6 @@ form {
         .active {
           flex: auto !important;
         }
-
-        // .animation {
-        //   display: flex;
-        //   transition: all 2s ease-in-out 2s;
-        //   align-self: center;
-
-        //   &.active {
-        //     align-self: start;
-        //   }
-        // }
       }
     }
 
@@ -53,9 +44,4 @@ form {
             box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 30%);
         }
     }
-}
-
-@keyframes mymove {
-  from {justify-content: center;}
-  to {justify-content: start;}
 }

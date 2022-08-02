@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
@@ -29,6 +29,7 @@ import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { FootnoteComponent } from './footnote/footnote.component';
 import { LanguagePickerComponent } from './language-picker/language-picker.component';
 import { TranslatorComponent } from './translator/translator.component';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -68,8 +69,15 @@ export function HttpLoaderFactory(http: HttpClient) {
       defaultLanguage: 'en',
     }),
     ReactiveFormsModule,
+    MatIconModule,
   ],
   providers: [CookieService, FormBuilder, EmailService],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(iconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
+    iconRegistry.addSvgIconSet(
+      domSanitizer.bypassSecurityTrustResourceUrl('./assets/mdi.svg')
+    );
+  }
+}
