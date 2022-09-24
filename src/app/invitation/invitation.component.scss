@@ -1,9 +1,12 @@
 .invitation {
-    .dear {
-        text-transform: uppercase;
-    }
+  text-align: justify;
+  text-justify: inter-word;
 
-    .icon {
-      vertical-align: middle;
-    }
+  .dear {
+    text-transform: uppercase;
+  }
+
+  .icon {
+    vertical-align: middle;
+  }
 }
