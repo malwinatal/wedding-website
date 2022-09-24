@@ -1,29 +1,37 @@
 <div class="container row">
-    <div class="center-align">
-        <h5>
-            <b translate="SCHEDULE.TITLE"></b>
-        </h5>
-    </div>
-    <div class="container">
-        <div class="timeline">
-            <div class="timeline-event" *ngFor="let item of scheduleItems; index as i;">
-                <div>
-                    <div class="card timeline-content">
-                        <div class="card-content">
-                            <h6><b>{{item.time}}</b></h6>
-                            <p translate="{{item.translation}}"></p>
-                        </div>
-                    </div>
-                    <div class="timeline-badge blue-grey darken-2 white-text" [ngClass]="{'pulse': item.icon === 'fa-heart'}">
-                      <div *ngIf="!item.materialIcon;else matIcon">
-                        <i class="fa-solid {{item.icon}}"></i>
-                      </div>
-                      <ng-template #matIcon>
-                        <mat-icon class="icon" [svgIcon]="item.icon"></mat-icon>
-                      </ng-template>
-                    </div>
-                </div>
+  <div class="center-align">
+    <h5>
+      <b translate="SCHEDULE.TITLE"></b>
+    </h5>
+  </div>
+  <div class="container">
+    <div class="timeline">
+      <div
+        class="timeline-event"
+        *ngFor="let item of scheduleItems; index as i"
+      >
+        <div>
+          <div class="card timeline-content">
+            <div class="card-content">
+              <h6>
+                <b>{{ item.time }}</b>
+              </h6>
+              <p translate="{{ item.translation }}"></p>
             </div>
+          </div>
+          <div
+            class="timeline-badge indigo darken-2 white-text"
+            [ngClass]="{ pulse: item.icon === 'fa-heart' }"
+          >
+            <div *ngIf="!item.materialIcon; else matIcon">
+              <i class="fa-solid {{ item.icon }}"></i>
+            </div>
+            <ng-template #matIcon>
+              <mat-icon class="icon" [svgIcon]="item.icon"></mat-icon>
+            </ng-template>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

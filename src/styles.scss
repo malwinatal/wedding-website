@@ -1,14 +1,15 @@
 @import "materialize-css/sass/components/color-variables";
 @import "materialize-css/sass/components/color-classes";
 
-$primary-color: color("blue-grey", "darken-3") !default;
-$primary-color-light: color("blue-grey", "base") !default;
-$primary-color-dark: color("blue-grey", "darken-4") !default;
+$primary-color: color("indigo", "darken-4") !default;
+$primary-color-light: color("indigo", "base") !default;
+$primary-color-dark: color("indigo", "darken-4") !default;
 $secondary-color: $primary-color !default;
 
 $chip-selected-color: $primary-color-light;
 $chip-bg-color: $primary-color-dark;
-$link-color: $primary-color-light;
+$link-color: #000000DE;
+$owca-color: #4a5d83;
 
 @import 'materialize-css/sass/materialize.scss';
 
@@ -24,10 +25,12 @@ body {
     }
 
     //FONTS
-    font-family: 'Courier New', monospace;
+    // font-family: 'Courier New', monospace;
+    font-family: trispace, monospace;
 
     input {
-        font-family: 'Courier New', monospace;
+        // font-family: 'Courier New', monospace;
+        font-family: trispace, monospace;
     }
 
     h5 {
@@ -126,7 +129,8 @@ body {
         font-size: 1.25rem !important;
 
         h1 {
-            font-size: 5.25rem !important;
+            // font-size: 5.25rem !important;
+            font-size: 8rem !important;
         }
 
         h2 {

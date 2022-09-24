@@ -1,30 +1,63 @@
 <nav class="nav-center">
-    <div class="nav-wrapper navbar-fixed blue-grey darken-3">
-        <a href="#" (click)="toggleSidenav()" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <div class="right logout"><a class="waves-effect waves-light btn-small" (click)="logout()"><i class="material-icons right logout-btn">exit_to_app</i>Logout</a></div>
-        <app-language-picker [selectedLang]="selectedLang" (changeLang)="changeLang($event)" class="right"></app-language-picker>
-        <ul id="nav-mobile" class="hide-on-med-and-down">
-            <li><a routerLink="/home" fragment="invitation" translate="NAVBAR.HOME"></a></li>
-            <li><a routerLink="/home" fragment="rsvp" translate="NAVBAR.RSVP"></a></li>
-            <li><a routerLink="/home" fragment="location" translate="NAVBAR.LOCATION"></a></li>
-            <li><a routerLink="/home" fragment="schedule" translate="NAVBAR.SCHEDULE"></a></li>
-            <li><a routerLink="/home" fragment="pictures" translate="NAVBAR.PICTURES"></a></li>
-            <!-- <li><a routerLink="/home" fragment="countries" translate="NAVBAR.COUNTRIES"></a></li> -->
-            <li><a routerLink="/home" fragment="translator" translate="NAVBAR.TRANSLATOR"></a></li>
-            <li><a routerLink="/home" fragment="contact" translate="NAVBAR.CONTACT"></a></li>
-            <!-- <li><a routerLink="/home" fragment="companies" translate="NAVBAR.COMPANIES"></a></li> -->
-        </ul>
+  <div class="nav-wrapper navbar-fixed indigo darken-4">
+    <a href="#" (click)="toggleSidenav()" data-target="mobile-demo" class="sidenav-trigger"><i
+        class="material-icons">menu</i></a>
+    <div class="right logout">
+      <a class="waves-effect waves-light btn-small" (click)="logout()"><i
+          class="material-icons right logout-btn">exit_to_app</i>Logout</a>
     </div>
+    <app-language-picker [selectedLang]="selectedLang" (changeLang)="changeLang($event)" class="right">
+    </app-language-picker>
+    <ul id="nav-mobile" class="hide-on-med-and-down">
+      <li>
+        <a routerLink="/home" fragment="invitation" translate="NAVBAR.HOME"></a>
+      </li>
+      <li>
+        <a routerLink="/home" fragment="rsvp" translate="NAVBAR.RSVP"></a>
+      </li>
+      <li>
+        <a routerLink="/home" fragment="location" translate="NAVBAR.LOCATION"></a>
+      </li>
+      <li>
+        <a routerLink="/home" fragment="schedule" translate="NAVBAR.SCHEDULE"></a>
+      </li>
+      <li>
+        <a routerLink="/home" fragment="pictures" translate="NAVBAR.PICTURES"></a>
+      </li>
+      <!-- <li><a routerLink="/home" fragment="countries" translate="NAVBAR.COUNTRIES"></a></li> -->
+      <li>
+        <a routerLink="/home" fragment="translator" translate="NAVBAR.TRANSLATOR"></a>
+      </li>
+      <li>
+        <a routerLink="/home" fragment="contact" translate="NAVBAR.CONTACT"></a>
+      </li>
+      <!-- <li><a routerLink="/home" fragment="companies" translate="NAVBAR.COMPANIES"></a></li> -->
+    </ul>
+  </div>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
-    <li><a routerLink="/home" (click)="clickedSidenav()" fragment="invitation" translate="NAVBAR.HOME"></a></li>
-    <li><a routerLink="/home" (click)="clickedSidenav()" fragment="rsvp" translate="NAVBAR.RSVP"></a></li>
-    <li><a routerLink="/home" (click)="clickedSidenav()" fragment="location" translate="NAVBAR.LOCATION"></a></li>
-    <li><a routerLink="/home" (click)="clickedSidenav()" fragment="schedule" translate="NAVBAR.SCHEDULE"></a></li>
-    <li><a routerLink="/home" (click)="clickedSidenav()" fragment="pictures" translate="NAVBAR.PICTURES"></a></li>
-    <!-- <li><a routerLink="/home" (click)="clickedSidenav()" fragment="countries" translate="NAVBAR.COUNTRIES"></a></li> -->
-    <li><a routerLink="/home" (click)="clickedSidenav()" fragment="translator" translate="NAVBAR.TRANSLATOR"></a></li>
-    <li><a routerLink="/home" (click)="clickedSidenav()" fragment="contact" translate="NAVBAR.CONTACT"></a></li>
-    <!-- <li><a routerLink="/home" (click)="clickedSidenav()" fragment="companies" translate="NAVBAR.COMPANIES"></a></li> -->
+  <li>
+    <a routerLink="/home" (click)="clickedSidenav()" fragment="invitation" translate="NAVBAR.HOME"></a>
+  </li>
+  <li>
+    <a routerLink="/home" (click)="clickedSidenav()" fragment="rsvp" translate="NAVBAR.RSVP"></a>
+  </li>
+  <li>
+    <a routerLink="/home" (click)="clickedSidenav()" fragment="location" translate="NAVBAR.LOCATION"></a>
+  </li>
+  <li>
+    <a routerLink="/home" (click)="clickedSidenav()" fragment="schedule" translate="NAVBAR.SCHEDULE"></a>
+  </li>
+  <li>
+    <a routerLink="/home" (click)="clickedSidenav()" fragment="pictures" translate="NAVBAR.PICTURES"></a>
+  </li>
+  <!-- <li><a routerLink="/home" (click)="clickedSidenav()" fragment="countries" translate="NAVBAR.COUNTRIES"></a></li> -->
+  <li>
+    <a routerLink="/home" (click)="clickedSidenav()" fragment="translator" translate="NAVBAR.TRANSLATOR"></a>
+  </li>
+  <li>
+    <a routerLink="/home" (click)="clickedSidenav()" fragment="contact" translate="NAVBAR.CONTACT"></a>
+  </li>
+  <!-- <li><a routerLink="/home" (click)="clickedSidenav()" fragment="companies" translate="NAVBAR.COMPANIES"></a></li> -->
 </ul>

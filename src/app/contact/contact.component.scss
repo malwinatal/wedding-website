@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+
+body {
+
+  font-family: trispace, monospace;
+  font-family: 'Courier New', monospace;
+}
+
+a {
+  i {
+    color: $primary-color;
+  }
+
+  :hover {
+    text-decoration: underline;
+  }
+}
