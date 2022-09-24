@@ -1,91 +1,54 @@
-<div class="welcome">
-  <div class="cover valign-wrapper">
-    <div class="background">
-      <div class="text-on-image">
-        <h1 class="row center-align indigo-text text-darken-4">
-          <div class="bride-and-groom" translate="INVITATION.NAMES"></div>
-        </h1>
-
+<div class="invitation">
+  <div class="container">
+    <div class="row">
+      <div class="card col s8 offset-s2">
+        <h5 class="row center-align dear">
+          <span translate="INVITATION.INVITE.DEAR"></span><span> {{ guest }},</span>
+        </h5>
+        <h6 class="row center-align">
+          <b class="indigo-text text-darken-3" translate="INVITATION.INVITE.HAPPY"
+            [translateParams]="{ companions: companions }"></b>
+        </h6>
+        <!-- <div class="row center-align" [innerHTML]="'INVITATION.INVITE.DETAILS' | translate"></div> -->
         <div class="row center-align">
-          <div class="col s12 m6 link">
-            <h5>
-              <a routerLink="/home" fragment="location">
-                <span translate="INVITATION.PLACE"></span>
-              </a>
-            </h5>
-            <p translate="INVITATION.WHERE"></p>
-          </div>
-          <div class="col s12 m6 link">
-            <h5>
-              <a routerLink="/home" fragment="schedule">
-                <span translate="INVITATION.DATE"></span>
-              </a>
-            </h5>
-            <p translate="INVITATION.WHEN"></p>
-          </div>
+          <!-- <span><i class="fa-solid fa-shirt"></i></span>
+          <span>&nbsp;</span> -->
+          <span translate="INVITATION.INVITE.DRESSCODE"></span>
+          <span> : </span>
+          <span translate="INVITATION.INVITE.BUSINESSCASUAL"></span>
+          <!--<span class="fa-stack" style="vertical-align: center;">
+                  <i class="fa fa-ban fa-stack-2x"></i>
+                  <i class="fa-brands fa-black-tie fa-stack-1x"></i>
+              </span> -->
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="invitation">
-    <div class="container">
-      <div class="row">
-        <div class="card col s8 offset-s2">
-          <h5 class="row center-align dear">
-            <span translate="INVITATION.INVITE.DEAR"></span
-            ><span> {{ guest }},</span>
-          </h5>
-          <h6 class="row center-align">
-            <b
-              class="indigo-text text-darken-3"
-              translate="INVITATION.INVITE.HAPPY"
-              [translateParams]="{ companions: companions }"
-            ></b>
-          </h6>
-          <!-- <div class="row center-align" [innerHTML]="'INVITATION.INVITE.DETAILS' | translate"></div> -->
-          <div class="row center-align">
-            <span><i class="fa-solid fa-shirt"></i></span>
+        <h6 class="row center-align">
+          <b class="indigo-text text-darken-3" translate="INVITATION.INVITE.NOGIFTS">
             <span>&nbsp;</span>
-            <span translate="INVITATION.INVITE.DRESSCODE"></span>
-            <span> : </span>
-            <span translate="INVITATION.INVITE.BUSINESSCASUAL"></span>
-            <!--<span class="fa-stack" style="vertical-align: center;">
-                    <i class="fa fa-ban fa-stack-2x"></i>
-                    <i class="fa-brands fa-black-tie fa-stack-1x"></i>
-                </span> -->
-          </div>
-          <h6 class="row center-align">
-            <b
-              class="indigo-text text-darken-3"
-              translate="INVITATION.INVITE.NOGIFTS"
-            >
-              <span>&nbsp;</span>
-              <span><i class="fa-solid fa-heart"></i></span>
-            </b>
-          </h6>
-          <div class="valign-wrapper">
-            <div class="row center-align" translate="INVITATION.INVITE.HOWEVER">
-              <div class="center-align indigo-text text-darken-3">
-                <p>
-                  <span>
-                    <mat-icon class="icon" svgIcon="cash-multiple"></mat-icon>
-                    <span> &nbsp; </span>
-                    <i class="fa-solid fa-paw fa-1x"></i>
-                    <i class="fa-solid fa-bowl-food fa-1x"></i>
-                  </span>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </b>
+        </h6>
+        <div class="valign-wrapper">
+          <div class="row center-align" translate="INVITATION.INVITE.HOWEVER">
+            <!-- <div class="center-align indigo-text text-darken-3">
+              <p>
+                <span>
+                  <mat-icon class="icon" svgIcon="cash-multiple"></mat-icon>
                   <span> &nbsp; </span>
-                  <span class="fa-stack" style="vertical-align: center">
-                    <i class="fa fa-ban fa-stack-2x"></i>
-                    <i class="fa-solid fa-gift fa-stack-1x"></i>
-                  </span>
-                  <span> &nbsp; </span>
-                  <span class="fa-stack" style="vertical-align: center">
-                    <i class="fa fa-ban fa-stack-2x"></i>
-                    <mat-icon class="icon" svgIcon="flower"></mat-icon>
-                  </span>
-                </p>
-              </div>
-            </div>
+                  <i class="fa-solid fa-paw fa-1x"></i>
+                  <i class="fa-solid fa-bowl-food fa-1x"></i>
+                </span>
+                <span> &nbsp; </span>
+                <span class="fa-stack" style="vertical-align: center">
+                  <i class="fa fa-ban fa-stack-2x"></i>
+                  <i class="fa-solid fa-gift fa-stack-1x"></i>
+                </span>
+                <span> &nbsp; </span>
+                <span class="fa-stack" style="vertical-align: center">
+                  <i class="fa fa-ban fa-stack-2x"></i>
+                  <mat-icon class="icon" svgIcon="flower"></mat-icon>
+                </span>
+              </p>
+            </div> -->
           </div>
         </div>
       </div>

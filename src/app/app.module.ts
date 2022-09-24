@@ -30,6 +30,7 @@ import { FootnoteComponent } from './footnote/footnote.component';
 import { LanguagePickerComponent } from './language-picker/language-picker.component';
 import { TranslatorComponent } from './translator/translator.component';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { CoverComponent } from './cover/cover.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -53,6 +54,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FootnoteComponent,
     LanguagePickerComponent,
     TranslatorComponent,
+    CoverComponent,
   ],
   imports: [
     BrowserModule,
