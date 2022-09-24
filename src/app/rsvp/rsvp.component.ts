@@ -6,6 +6,7 @@ import { Rsvp } from '../models/Rsvp';
 import { AccountService } from '../services/account.service';
 import { RsvpService } from '../services/rsvp.service';
 import * as M from 'materialize-css';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-rsvp',
@@ -24,7 +25,8 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
     @Inject(DOCUMENT) private document: Document,
     private formBuilder: FormBuilder,
     private rsvpService: RsvpService,
-    private accontService: AccountService
+    private accontService: AccountService,
+    private translate: TranslateService
   ) {}
 
   ngAfterViewChecked(): void {
@@ -49,13 +51,17 @@ export class RsvpComponent implements OnInit, AfterViewChecked {
           })
         );
       });
+
+    this.translate.onLangChange.subscribe((land) => this.initializeChips());
   }
 
   initializeChips(): void {
     var elems = document.querySelectorAll('.chips');
 
+    const placeholder = this.translate.instant('RSVP.ADD_TAG') as string;
+
     this.instances = M.Chips.init(elems, {
-      placeholder: 'Add tag',
+      placeholder: placeholder,
       onChipAdd: () => this.updateChips(),
       onChipDelete: () => this.updateChips(),
     });

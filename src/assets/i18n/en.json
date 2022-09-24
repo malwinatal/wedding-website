@@ -39,7 +39,8 @@
     "DIET": "Please choose your diet",
     "PLANT": "Plant based meal",
     "MEAT": "Meat based meal",
-    "ALLERGIES":  "Any allergies or dietary restrictions?"
+    "ALLERGIES":  "Any allergies or dietary restrictions?",
+    "ADD_TAG": "Add tag"
   },
   "LOCATION": {
     "BUTTON_MAPS": "Go to maps",
