@@ -27,12 +27,12 @@
                 opacity: 0.6;
 
                 @media #{$medium-and-down} {
-                    background-image: url('../../assets/images/beach.jpg');
+                    background-image: url('../../assets/images/11.jpg');
 
                 }
 
-                @media #{$large-and-up} {
-                    background-image: url('../../assets/images/beach_cover.jpg');
+                 @media #{$large-and-up} {
+                     background-image: url('../../assets/images/11.jpg');
 
                 }
             }
