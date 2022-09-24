@@ -1,12 +1,12 @@
 .invitation {
-    width: 100%;
-    line-height: 230%;
+  text-align: justify;
+  text-justify: inter-word;
 
-    .dear {
-        text-transform: uppercase;
-    }
+  .dear {
+    text-transform: uppercase;
+  }
 
-    .icon {
-      vertical-align: middle;
-    }
+  .icon {
+    vertical-align: middle;
+  }
 }
