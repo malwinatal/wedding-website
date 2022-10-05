@@ -10,7 +10,7 @@
         margin: 0px;
         height: 100%;
         width: 100%;
-        background: url('../../assets/images/beach.jpg')no-repeat center center fixed;
+        background: url('../../assets/images/1.jpg')no-repeat center center fixed;
         -webkit-background-size: cover;
         -o-background-size: cover;
         -moz-background-size: cover;
@@ -20,7 +20,7 @@
             background-color: rgba(255, 255, 200, 0.35);
         }
     }
-    
+
     h2 {
         font-weight: bold;
     }
@@ -31,9 +31,9 @@
         }
 
         @media #{$small-and-down} {
-            margin-top: 20vh;
+            margin-top: 10vh;
         }
-    
+
         @media #{$medium-and-up} {
             margin-top: 30vh;
         }
@@ -44,5 +44,23 @@
         bottom: 0;
         left: 0;
         width: 100%;
+
+        @media #{$medium-and-down} and (orientation: landscape)  {
+          visibility: hidden;
+        }
+    }
+
+    .language-picker {
+      visibility: hidden;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      margin-right: 1em;
+      margin-bottom: 7em;
+
+
+      @media #{$medium-and-down} and (orientation: landscape) {
+        visibility: visible;
+      }
     }
 }

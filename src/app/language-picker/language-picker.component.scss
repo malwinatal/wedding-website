@@ -4,9 +4,15 @@
   ul {
     display: flex;
     flex-direction: column;
+
+    &.up {
+      flex-direction: column-reverse;
+      margin: 0;
+    }
   }
-  
+
   li {
+    flex: 0 0 auto;
     height: 3.5rem;
   }
 }

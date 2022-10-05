@@ -9,6 +9,7 @@ const allLangs = ['gb', 'pl', 'pt'];
 })
 export class LanguagePickerComponent implements OnInit {
   @Input() selectedLang!: string;
+  @Input() direction: string = 'down';
   @Output() changeLang = new EventEmitter<string>();
 
   selectedFlag!: string;
@@ -33,7 +34,10 @@ export class LanguagePickerComponent implements OnInit {
   }
 
   setFlags() {
-    this.selectedFlag = (this.selectedLang != 'pt' && this.selectedLang != 'pl') ? 'gb' : this.selectedLang; 
+    this.selectedFlag =
+      this.selectedLang != 'pt' && this.selectedLang != 'pl'
+        ? 'gb'
+        : this.selectedLang;
 
     this.otherLangs = allLangs.filter((l) => l != this.selectedFlag);
   }

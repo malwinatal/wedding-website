@@ -41,5 +41,14 @@
     <div class="language">
       <app-language-selector></app-language-selector>
     </div>
+
+    <div class="language-picker">
+      <app-language-picker
+        class="right-align"
+        direction="up"
+        [selectedLang]="selectedLang"
+        (changeLang)="changeLang($event)"
+      ></app-language-picker>
+    </div>
   </div>
 </div>

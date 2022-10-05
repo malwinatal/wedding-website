@@ -3,6 +3,7 @@ import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
 import { FirestoreService } from '../services/firestore.service';
 import { AccountService } from '../services/account.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-login',
@@ -11,16 +12,21 @@ import { AccountService } from '../services/account.service';
 })
 export class LoginComponent implements OnInit {
   invalid = false;
+  selectedLang: string;
   constructor(
     private fs: FirestoreService,
     private as: AccountService,
     private cookieService: CookieService,
-    private router: Router
+    private router: Router,
+    private translate: TranslateService
   ) {
     document.addEventListener('DOMContentLoaded', function () {
       const elems = document.querySelectorAll('select');
       const instances = M.FormSelect.init(elems);
     });
+    this.selectedLang = this.translate.currentLang
+      ? this.translate.currentLang
+      : 'en';
   }
 
   ngOnInit(): void {}
@@ -36,5 +42,11 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['home']);
       }
     });
+  }
+
+  changeLang(lang: string) {
+    this.translate.use(lang);
+    this.cookieService.set('lang', lang);
+    this.selectedLang = lang;
   }
 }
