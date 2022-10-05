@@ -1,12 +1,20 @@
 .invitation {
   text-align: justify;
   text-justify: inter-word;
+  line-height: 2;
+  //text-shadow: 0 0 5px #0000FF;
+  //font-style: italic;
 
-  .dear {
-    text-transform: uppercase;
+  .card {
+    //font-family: t;// ney: e i p//yey: t u a
+    background-image: url('../../assets/images/paper.png');
+    .dear {
+      text-transform: uppercase;
+    }
+
+    .icon {
+      vertical-align: middle;
+    }
   }
 
-  .icon {
-    vertical-align: middle;
-  }
 }
