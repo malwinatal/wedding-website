@@ -7,6 +7,9 @@
     overflow-y: hidden;
 
     #background {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
         margin: 0px;
         height: 100%;
         width: 100%;
@@ -30,28 +33,29 @@
             margin-bottom: 0;
         }
 
-        @media #{$small-and-down} {
-            margin-top: 10vh;
-        }
+        // @media #{$small-and-down} {
+        //     margin-top: 10vh;
+        // }
 
-        @media #{$medium-and-up} {
-            margin-top: 30vh;
-        }
+        // @media #{$medium-and-up} {
+        //     margin-top: 30vh;
+        // }
     }
 
     .language {
-        position: fixed;
+        // position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
 
         @media #{$medium-and-down} and (orientation: landscape)  {
-          visibility: hidden;
+          display: none;
         }
     }
 
     .language-picker {
-      visibility: hidden;
+      display: none;
+      // visibility: hidden;
       position: fixed;
       right: 0;
       bottom: 0;
@@ -60,7 +64,7 @@
 
 
       @media #{$medium-and-down} and (orientation: landscape) {
-        visibility: visible;
+        display: block;
       }
     }
 }
