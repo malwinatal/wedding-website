@@ -1,9 +1,9 @@
 @import "materialize-css/sass/components/color-variables";
 @import "materialize-css/sass/components/color-classes";
 
-$primary-color: color("indigo", "darken-4") !default;
-$primary-color-light: color("indigo", "base") !default;
-$primary-color-dark: color("indigo", "darken-4") !default;
+$primary-color: color("grey", "lighten-1") !default;
+$primary-color-light: color("grey", "lighten-2") !default;
+$primary-color-dark: color("grey", "darken-1") !default;
 $secondary-color: $primary-color !default;
 
 $chip-selected-color: $primary-color-light;
@@ -15,6 +15,10 @@ $owca-color: #4a5d83;
 
 /* You can add global styles to this file, and also import other style files */
 body {
+
+    .fancy-font {
+        font-family: fife, 'arial', sans-serif;
+    }
 
     // CHIPS
 
@@ -34,7 +38,7 @@ body {
     }
 
     h5 {
-        color: $primary-color
+        color: $primary-color-dark
     }
 
     @media #{$small-and-down} {

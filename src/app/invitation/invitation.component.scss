@@ -2,12 +2,12 @@
   text-align: justify;
   text-justify: inter-word;
   line-height: 2;
-  //text-shadow: 0 0 5px #0000FF;
-  //font-style: italic;
+  //text-shadow: 0 0 5px black;
+  font-weight: bold;
 
-  .card {
+  .card-content {
     //font-family: t;// ney: e i p//yey: t u a
-    background-image: url('../../assets/images/paper.png');
+    position: relative;
     .dear {
       text-transform: uppercase;
     }
@@ -15,6 +15,28 @@
     .icon {
       vertical-align: middle;
     }
+
+    p {
+      padding-bottom: 1.5rem;
+      color: #000; /* Fallback for older browsers */
+      color: rgba(0, 0, 0, 0.5);
+
+      &.bolder {
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+
+  .card::before {
+    background-image: url('../../assets/images/paper.png');
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
   }
 
 }
