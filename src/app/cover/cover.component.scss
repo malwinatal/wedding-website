@@ -31,12 +31,12 @@
                 opacity: 0.6;
 
                 @media #{$medium-and-down} {
-                    background-image: url('../../assets/images/11-min.jpg');
+                    background-image: url('../../assets/images/cover.jpg');
 
                 }
 
                 @media #{$large-and-up} {
-                    background-image: url('../../assets/images/11-min.jpg');
+                    background-image: url('../../assets/images/cover.jpg');
 
                 }
             }
@@ -48,6 +48,7 @@
 
                 .bride-and-groom {
                     color: white;
+                    font-size: larger;
                 }
             }
 
@@ -62,7 +63,7 @@
                 p {
                     text-transform: uppercase;
                     margin-top: 0;
-                    font-size: x-small;
+                    font-size: small;
                 }
 
                 a {
