@@ -2,14 +2,12 @@
   text-align: justify;
   text-justify: inter-word;
   line-height: 2;
-  //text-shadow: 0 0 5px black;
   font-weight: bold;
 
   .card-content {
-    //font-family: t;// ney: e i p//yey: t u a
     position: relative;
     .dear {
-      text-transform: uppercase;
+      text-transform: capitalize;
     }
 
     .icon {
