@@ -1,25 +1,84 @@
 {
   "LOGIN": {
-    "WELCOME": "Estamos felizes por anunciar que queremos que celebrem conosco!",
-    "NAMES": "Malwina e David",
-    "GETIN": "Entra!",
-    "PASSWORD": "Senha"
+    "WELCOME": "Estamos felizes por anunciar que nos vamos casar e queremos que celebrem conosco!",
+    "NAMES": "Malwina & David",
+    "GETIN": "Entrar!",
+    "PASSWORD": "Password",
+    "ERROR": "O código inserido não está correto!"
   },
   "NAVBAR": {
-      "HOME": "Início",
-      "RSVP": "RSVP",
-      "LOCATION": "Localização",
-      "SCHEDULE": "Programa",
-      "PICTURES": "Fotos",
-      "COUNTRIES": "Países",
-      "CONTACT": "Contactos",
-      "COMPANIES": "Empresas"
+    "HOME": "Início",
+    "RSVP": "RSVP",
+    "LOCATION": "Local",
+    "SCHEDULE": "Programa",
+    "PICTURES": "Fotos",
+    "COUNTRIES": "Our countries",
+    "TRANSLATOR": "Pequeno tradutor",
+    "CONTACT": "Contactos",
+    "COMPANIES": "Empresas"
   },
   "INVITATION": {
-    "NAMES": "Malwina e David",
-    "PLACE": "Oczyszczalnia",
-    "DATE": "16 de Julho de 2023",
-    "DEAR": "Caro",
-    "INVITATION": "Estamos felizes por vos convidar para o nosso casamento!"
-}
+    "NAMES": "Malwina & David",
+    "WHERE": "Onde?",
+    "PLACE": "Oczyszczalnia Miejsce",
+    "WHEN": "Quando?",
+    "DATE": "15:00 16 de Julho de 2023",
+    "INVITE": {
+      "DEAR": "Dear",
+      "HAPPY": "We're happy to invite you {{ companions }} for our wedding!",
+      "DETAILS": "O casamento vai ser às 15 horas de 16 de Julho de 2023 em Oczyszczalnia Miejsce, perto de Varsóvia.",
+      "DRESSCODE": "Dress code",
+      "BUSINESSCASUAL": "Business Casual, é recomendado usar sapatos rasos.",
+      "NOGIFTS": "Não esperamos nenhumas ofertas, apenas a vossa presença!",
+      "HOWEVER": "Mas se nos quiserem dar qualquer coisa, por favos deem algo de fácil transporte como dinheiro. Ou comida para animais que teremos todo o gosto em doar posteriormente a um abrigo."
+    }
+  },
+  "RSVP": {
+    "TITLE": "RSVP",
+    "GOING": "Vais?",
+    "DIET": "Por favos escolhe a dieta",
+    "PLANT": "Refeição à base de vegetais",
+    "MEAT": "Refeição à base de animais",
+    "ALLERGIES":  "Alguma alergia ou restrição alimentar?",
+    "ADD_TAG": "Adicionar tag"
+  },
+  "LOCATION": {
+    "BUTTON_MAPS": "Ir para o maps",
+    "BUTTON_WAZE": "Ir para o waze",
+    "BUTTON_VENUE": "Ir para o local",
+    "ADDRESS": "Endereço"
+  },
+  "SCHEDULE": {
+    "TITLE": "Programa",
+    "WELCOME": "Limonada e snacks de boas vindas",
+    "CEREMONY": "Cerimónia à beira do lago",
+    "MEAL": "Prato principal",
+    "GRILL": "Churrasco para jantar",
+    "CAKE": "Altura para bolo de casamento!",
+    "SOUP": "Sopa nocturna"
+  },
+  "PICTURES": {
+    "TITLE": "Fotos",
+    "AVAILABLE": "Fotos do casamento ficarão disponíveis aqui."
+  },
+  "TRANSLATOR": {
+    "TITLE": "Pequeno tradutor"
+  },
+  "CONTACT": {
+    "TITLE": "Contactor",
+    "TEXT": "Caso tenham alguma questão perguntem-nos directamente por WhatsApp, SMS, email ou pelo formulário que se segue.",
+    "SEND": "Enviar",
+    "SUBJECT": {
+      "LABEL": "Assunto",
+      "PLACEHOLDER": ""
+    },
+    "BODY": "Descrição",
+    "SENDER": "Remetente",
+    "FROM": "O teu email",
+    "EMAIL_ERROR": "Por favor introduz um email válido!",
+    "EMPTY_ERROR": "Este campo não pode estar vazio!"
+  },
+  "COMPANIES": {
+    "TITLE": "Empresas recomendadas"
+  }
 }
