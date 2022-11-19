@@ -25,12 +25,17 @@
     "DATE": "15:00 16 de Julho de 2023",
     "INVITE": {
       "DEAR": "Dear",
-      "HAPPY": "We're happy to invite you {{ companions }} for our wedding!",
+      "HAPPY": "Estamos felizes por {{ who }} convidar para o nosso casamento",
       "DETAILS": "O casamento vai ser às 15 horas de 16 de Julho de 2023 em Oczyszczalnia Miejsce, perto de Varsóvia.",
       "DRESSCODE": "Dress code",
       "BUSINESSCASUAL": "Business Casual, é recomendado usar sapatos rasos.",
       "NOGIFTS": "Não esperamos nenhumas ofertas, apenas a vossa presença!",
-      "HOWEVER": "Mas se nos quiserem dar qualquer coisa, por favos deem algo de fácil transporte como dinheiro. Ou comida para animais que teremos todo o gosto em doar posteriormente a um abrigo."
+      "HOWEVER": "Mas se nos quiserem dar qualquer coisa, por favos deem algo de fácil transporte como dinheiro. Ou comida para animais que teremos todo o gosto em doar posteriormente a um abrigo.",
+      "WHO": {
+        "SINGLE": "te",
+        "PLURAL": "vos",
+        "WITH_CHILDREN": "vos"
+      }
     }
   },
   "RSVP": {
