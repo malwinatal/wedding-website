@@ -55,7 +55,8 @@
     "MEAL": "Prato principal",
     "GRILL": "Churrasco para jantar",
     "CAKE": "Altura para bolo de casamento!",
-    "SOUP": "Sopa nocturna"
+    "SOUP": "Sopa nocturna",
+    "END": "Fim"
   },
   "PICTURES": {
     "TITLE": "Fotos",

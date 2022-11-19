@@ -55,7 +55,8 @@
     "MEAL": "Main dish",
     "GRILL": "Barbeque for dinner",
     "CAKE": "Time for wedding cake!",
-    "SOUP": "Night soup"
+    "SOUP": "Night soup",
+    "END": "The end"
   },
   "PICTURES": {
     "TITLE": "Pictures",

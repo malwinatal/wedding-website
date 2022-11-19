@@ -14,37 +14,43 @@ export class ScheduleComponent implements OnInit {
       icon: 'fa-martini-glass',
     },
     {
-      time: '15:30',
+      time: '16:00',
       name: 'ceremony',
       translation: 'SCHEDULE.CEREMONY',
       icon: 'fa-heart',
     },
     {
-      time: '16:00',
+      time: '',
       name: 'meal',
       translation: 'SCHEDULE.MEAL',
       icon: 'fa-utensils',
     },
     {
-      time: '20:00',
+      time: '',
       name: 'grill',
       translation: 'SCHEDULE.GRILL',
       materialIcon: true,
       icon: 'grill',
     },
     {
-      time: '23:00',
+      time: '',
       name: 'cake',
       translation: 'SCHEDULE.CAKE',
       icon: 'fa-cake-candles',
     },
     {
-      time: '1:00',
+      time: '',
       name: 'soup',
       translation: 'SCHEDULE.SOUP',
       materialIcon: true,
       icon: 'bowl-mix',
     },
+    {
+      time: '3:00',
+      name: 'end',
+      translation: 'SCHEDULE.END',
+      icon: 'fa-bed',
+    }
   ];
 
   constructor() {}
