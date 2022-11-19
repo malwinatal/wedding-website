@@ -15,7 +15,8 @@
     "COUNTRIES": "Our countries",
     "TRANSLATOR": "Pequeno tradutor",
     "CONTACT": "Contactos",
-    "COMPANIES": "Empresas"
+    "COMPANIES": "Empresas",
+    "LOGOUT": "Sair"
   },
   "INVITATION": {
     "NAMES": "Malwina & David",
@@ -28,7 +29,7 @@
       "HAPPY": "Estamos felizes por {{ who }} convidar para o nosso casamento",
       "DETAILS": "O casamento vai ser às 15 horas de 16 de Julho de 2023 em Oczyszczalnia Miejsce, perto de Varsóvia.",
       "DRESSCODE": "Dress code",
-      "BUSINESSCASUAL": "Business Casual, é recomendado usar sapatos rasos.",
+      "BUSINESSCASUAL": "boho/business casual, é recomendado usar sapatos rasos.",
       "NOGIFTS": "Não esperamos nenhumas ofertas, apenas a vossa presença!",
       "HOWEVER": "Mas se nos quiserem dar qualquer coisa, por favos deem algo de fácil transporte como dinheiro. Ou comida para animais que teremos todo o gosto em doar posteriormente a um abrigo.",
       "WHO": {
@@ -60,7 +61,8 @@
     "MEAL": "Prato principal",
     "GRILL": "Churrasco para jantar",
     "CAKE": "Altura para bolo de casamento!",
-    "SOUP": "Sopa nocturna"
+    "SOUP": "Sopa nocturna",
+    "END": "Fim"
   },
   "PICTURES": {
     "TITLE": "Fotos",
