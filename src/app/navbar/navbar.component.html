@@ -3,8 +3,8 @@
     <a href="#" (click)="toggleSidenav()" data-target="mobile-demo" class="sidenav-trigger"><i
         class="material-icons">menu</i></a>
     <div class="right logout">
-      <a class="waves-effect waves-light btn-small" (click)="logout()"><i
-          class="material-icons right logout-btn">exit_to_app</i>Logout</a>
+      <a class="waves-effect waves-light btn-small" (click)="logout()" translate="NAVBAR.LOGOUT"><i
+          class="material-icons right logout-btn">exit_to_app</i></a>
     </div>
     <app-language-picker [selectedLang]="selectedLang" (changeLang)="changeLang($event)" class="right">
     </app-language-picker>
