@@ -1,0 +1,85 @@
+{
+    "LOGIN": {
+      "WELCOME": "Z radością informujemy, że bierzemy ślub i zapraszamy do świętowania z nami!",
+      "NAMES": "Malwina & David",
+      "GETIN": "Wejdź!",
+      "PASSWORD": "Hasło",
+      "ERROR": "Podany kod jest niepoprawny!"
+    },
+    "NAVBAR": {
+      "HOME": "Strona główna",
+      "RSVP": "RSVP",
+      "LOCATION": "Lokalizacja",
+      "SCHEDULE": "Plan",
+      "PICTURES": "Zdjęcia",
+      "COUNTRIES": "Nasze państwa",
+      "TRANSLATOR": "Słowniczek",
+      "CONTACT": "Kontakt",
+      "COMPANIES": "Firmy"
+    },
+    "INVITATION": {
+      "NAMES": "Malwina & David",
+      "WHERE": "Gdzie?",
+      "PLACE": "Oczyszczalnia Miejsce",
+      "WHEN": "Kiedy?",
+      "DATE": "15:00 16 Lipca 2023",
+      "INVITE": {
+        "DEAR": "Drogi",
+        "HAPPY": "Z radością zapraszamy na nasze wesele!",
+        "DETAILS": "Wesele odbędzie się o 15:00 16 lipca 2023 w Oczyszczalnii Miejsce koło Warszawy.",
+        "DRESSCODE": "Dress code",
+        "BUSINESSCASUAL": "boho/business casual, polecamy płaskie buty.",
+        "NOGIFTS": "Nie oczekujemy żadnych prezentów, tylko Waszą obecność!",
+        "HOWEVER": "Ale jeśli chcecie nam coś podarować poprosilibyśmy o coś co łatwo zawieziemy do domu, jak pieniądze. Albo jedzenie dla zwierzaków, które będziemy mogli zawieźć do schroniska."
+      }
+    },
+    "RSVP": {
+      "TITLE": "RSVP",
+      "GOING": "Będziesz?",
+      "DIET": "Proszę wybrać preferowaną dietę",
+      "PLANT": "Dieta roślinna",
+      "MEAT": "Dieta mięsna",
+      "ALLERGIES":  "Alergie lub inne restrykcje?",
+      "ADD_TAG": "Dodaj tag"
+    },
+    "LOCATION": {
+      "BUTTON_MAPS": "Przejdź do map",
+      "BUTTON_WAZE": "Przejdź to waze",
+      "BUTTON_VENUE": "Przejdź do strony sali",
+      "ADDRESS": "Adres"
+    },
+    "SCHEDULE": {
+      "TITLE": "Plan",
+      "WELCOME": "Powitalna lemoniada i przekąski",
+      "CEREMONY": "Ceremonia przy jeziorze",
+      "MEAL": "Obiad",
+      "GRILL": "Gril na kolację",
+      "CAKE": "Czas na tort weselny!",
+      "SOUP": "Zupa nocna"
+    },
+    "PICTURES": {
+      "TITLE": "Zdjęcia",
+      "AVAILABLE": "Zdjęcia z wesela będą dostępne tutaj."
+    },
+    "TRANSLATOR": {
+      "TITLE": "Słowniczek"
+    },
+    "CONTACT": {
+      "TITLE": "Kontakt",
+      "TEXT": "Jeżeli masz jakieś pytania prosimy o kontakt przez WhatsApp, SMS, email albo poniższy formularz.",
+      "SEND": "Wyślij",
+      "SUBJECT": {
+        "LABEL": "Temat",
+        "PLACEHOLDER": ""
+      },
+      "BODY": "Opis",
+      "SENDER": "Wysyłający",
+      "FROM": "Twój adres mailowy",
+      "EMAIL_ERROR": "Prosimy o poprawny adres mailowy!",
+      "EMPTY_ERROR": "To pole nie może być puste!"
+    },
+    "COMPANIES": {
+      "TITLE": "Polecane firmy"
+    }
+  }
+  
