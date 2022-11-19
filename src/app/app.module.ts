@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
@@ -13,7 +13,11 @@ import { LanguageSelectorComponent } from './language-selector/language-selector
 
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import {
+  TranslateLoader,
+  TranslateModule,
+  TranslateService,
+} from '@ngx-translate/core';
 import { InvitationComponent } from './invitation/invitation.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 import { LocationComponent } from './location/location.component';
@@ -73,7 +77,17 @@ export function HttpLoaderFactory(http: HttpClient) {
     ReactiveFormsModule,
     MatIconModule,
   ],
-  providers: [CookieService, FormBuilder, EmailService],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: appInitializerFactory,
+      deps: [TranslateService],
+      multi: true,
+    },
+    CookieService,
+    FormBuilder,
+    EmailService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {
@@ -82,4 +96,11 @@ export class AppModule {
       domSanitizer.bypassSecurityTrustResourceUrl('./assets/mdi.svg')
     );
   }
+}
+
+export function appInitializerFactory(translate: TranslateService) {
+  return () => {
+    translate.setDefaultLang('en');
+    return translate.use('en');
+  };
 }
