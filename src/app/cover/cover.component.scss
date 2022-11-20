@@ -62,8 +62,13 @@
 
                 p {
                     text-transform: uppercase;
-                    margin-top: 0;
+                    // margin-top: 0;
+                    margin-bottom: 0;
                     font-size: small;
+                }
+
+                h5 {
+                  margin-top: 0.3rem;
                 }
 
                 a {
