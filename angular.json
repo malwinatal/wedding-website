@@ -43,7 +43,11 @@
               "./node_modules/leaflet/dist/leaflet.css",
               "./node_modules/flag-icons/css/flag-icons.min.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "leaflet",
+              "materialize-css"
+           ]
           },
           "configurations": {
             "production": {
