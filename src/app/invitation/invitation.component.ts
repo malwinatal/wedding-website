@@ -12,7 +12,6 @@ import { AccountService } from '../services/account.service';
 export class InvitationComponent implements OnInit {
   userAccount: Account | null;
   public guest: string = 'human';
-  public who: string = 'you';
 
   constructor(
     accountService: AccountService,
@@ -22,24 +21,24 @@ export class InvitationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.guest = this.userAccount!.invitationName;
+    this.setInvitationName(this.translate.currentLang);
 
-    this.translate.onLangChange.subscribe(() => {
-      switch (this.userAccount?.companions) {
-        case Companions.SINGLE:
-          this.who = this.translate.instant('INVITATION.INVITE.WHO.SINGLE');
-          break;
-        case Companions.PLUSONE:
-          this.who = this.translate.instant('INVITATION.INVITE.WHO.PLURAL');
-          break;
-        case Companions.WITHCHILDREN:
-          this.who = this.translate.instant(
-            'INVITATION.INVITE.WHO.WITH_CHILDREN'
-          );
-          break;
-        default:
-          break;
-      }
+    this.translate.onLangChange.subscribe((event) => {
+      this.setInvitationName(event.lang);
     });
+  }
+
+  private setInvitationName(currentLang: string) {
+    switch (currentLang) {
+      case 'pl':
+        this.guest = this.userAccount!.invitationNamePl;
+        break;
+      case 'pt':
+        this.guest = this.userAccount!.invitationNamePt;
+        break;
+      default:
+        this.guest = this.userAccount!.invitationNameEn;
+        break;
+    }
   }
 }
