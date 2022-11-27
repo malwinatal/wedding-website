@@ -19,7 +19,9 @@
                         <p translate="INVITATION.WHEN"></p>
                         <h5>
                             <a routerLink="/home" fragment="schedule">
-                                <span translate="INVITATION.DATE"></span>
+                                <span>
+                                    {{( dateAvailable ? 'INVITATION.DATE' : 'INVITATION.SUMMER' ) | translate}}
+                                </span>
                             </a>
                         </h5>
                     </div>

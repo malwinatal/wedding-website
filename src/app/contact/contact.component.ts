@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit {
     _captcha: [''],
   });
   info: PersonalInfo | undefined;
+  infoAvailable =  false;
 
   constructor(
     private as: AccountService,
@@ -36,8 +37,9 @@ export class ContactComponent implements OnInit {
       .getSensitiveInformation()
       .pipe(first())
       .subscribe((info) => {
-        if (info != undefined) {
+        if (info != undefined && this.as.account!.name !== 'guest') {
           this.info = info;
+          this.infoAvailable = true;
         }
       });
   }

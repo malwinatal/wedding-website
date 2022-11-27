@@ -6,14 +6,14 @@
     <div class="card-content">
       <p translate="CONTACT.TEXT"></p>
 
-      <p>
+      <p *ngIf="infoAvailable">
         <a [href]="'https://wa.me/' + info?.portuguesePhoneWA" target="_blank"
           ><i class="fa-brands fa-whatsapp"></i>&nbsp;<span>{{
             info?.portuguesePhone
           }}</span></a
         >
       </p>
-      <p>
+      <p *ngIf="infoAvailable">
         <a [href]="'https://wa.me/' + info?.polishPhoneWA" target="_blank"
           ><i class="fa-brands fa-whatsapp"></i>&nbsp;<span>{{
             info?.polishPhone
@@ -21,7 +21,7 @@
         >
       </p>
 
-      <p>
+      <p *ngIf="infoAvailable">
         <a [href]="'mailto:' + info?.email" target="_blank"
           ><i class="fa-solid fa-envelope"></i>&nbsp;<span>{{
             info?.email
@@ -29,12 +29,12 @@
         >
       </p>
 
-      <p>
+      <p *ngIf="infoAvailable">
         <i class="fa-solid fa-piggy-bank"></i>&nbsp;<span>{{
           info?.portugueseBankAccount
         }}</span>
       </p>
-      <p>
+      <p *ngIf="infoAvailable">
         <i class="fa-solid fa-piggy-bank"></i>&nbsp;<span>{{
           info?.polishBankAccount
         }}</span>
