@@ -33,7 +33,7 @@ export class FirestoreService {
   getRsvpsForAccount(accountId: string): Observable<Array<Rsvp>> {
     return this.store
       .collection<Rsvp>('rsvps', (ref) =>
-        ref.where('accountId', '==', accountId)
+        ref.where('accountId', '==', accountId).orderBy('order')
       )
       .valueChanges({ idField: 'id' })
       .pipe(first());
