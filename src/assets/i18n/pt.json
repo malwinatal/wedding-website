@@ -26,7 +26,7 @@
     "DATE": "15:00 16 de Julho de 2023",
     "SUMMER": "Verão 2023",
     "INVITE": {
-      "HAPPY": "Estamos felizes por vos convidar para o nosso casamento",
+      "HAPPY": "Estamos felizes por vos convidar para o nosso casamento!",
       "DETAILS": "O casamento vai ser às 15 horas de 16 de Julho de 2023 em Oczyszczalnia Miejsce, perto de Varsóvia.",
       "DRESSCODE": "Dress code",
       "BUSINESSCASUAL": "boho/business casual, é recomendado usar sapatos rasos.",
@@ -67,7 +67,7 @@
     "TITLE": "Pequeno tradutor"
   },
   "CONTACT": {
-    "TITLE": "Contactor",
+    "TITLE": "Contactos",
     "TEXT": "Caso tenham alguma questão perguntem-nos directamente por WhatsApp, SMS, email ou pelo formulário que se segue.",
     "SEND": "Enviar",
     "SUBJECT": {
