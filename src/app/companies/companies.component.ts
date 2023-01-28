@@ -10,18 +10,18 @@ export class CompaniesComponent implements OnInit, AfterViewInit {
 
   public companyItems = [
     {
-      "name": "Malwida",
-      "image": "../../assets/images/logo_draft.png",
-      "web": "localhost:4200"
+      "name": "malvida",
+      "image": "../../assets/images/logos/malvida.png",
+      "web": "https://malvida.eu"
     },
     {
       "name": "Magic Flash Photo",
-      "image": "../../assets/images/magicflash.png",
+      "image": "../../assets/images/logos/magicflash.jpeg",
       "web": "https://www.magicflashphoto.com"
     },
     {
       "name": "Oczyszczalnia Miejsce",
-      "image": "../../assets/images/oczyszczalnia.png",
+      "image": "../../assets/images/logos/oczyszczalnia.png",
       "web": "https://oczyszczalniamiejsce.pl"
     }
   ];
