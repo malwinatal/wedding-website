@@ -14,14 +14,14 @@ import { FirestoreService } from '../services/firestore.service';
 export class ContactComponent implements OnInit {
   emailForm = this.fb.group({
     name: [''],
-    _replyto: ['', [Validators.email, Validators.required]],
+    email: ['', [Validators.email, Validators.required]],
     _subject: ['', Validators.required],
     message: ['', Validators.required],
     _honey: [''],
     _captcha: [''],
   });
   info: PersonalInfo | undefined;
-  infoAvailable =  false;
+  infoAvailable = false;
 
   constructor(
     private as: AccountService,
