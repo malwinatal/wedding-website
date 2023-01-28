@@ -1,19 +1,23 @@
 @font-face {
   font-family: fife;
   src: url(assets/fonts/FifeGallery.otf) format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: xantorid;
   src: url(assets/fonts/Xantorid.otf) format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: xantorid-italic;
   src: url(assets/fonts/Xantorid-Italic.otf) format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: trispace;
   src: url(assets/fonts/Trispace-Thin.woff2) format("woff2");
+  font-display: swap;
 }
