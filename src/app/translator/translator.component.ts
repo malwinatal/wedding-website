@@ -42,7 +42,7 @@ export class TranslatorComponent implements OnInit {
     {
       en: 'Excuse me',
       pl: 'Przepraszam',
-      pt: 'Com licenca',
+      pt: 'Com licença',
     },
     {
       en: 'Nice to meet you',
@@ -77,7 +77,7 @@ export class TranslatorComponent implements OnInit {
     {
       en: 'No, thank you',
       pl: 'Nie, dziękuję',
-      pt: 'Nao, obrigado',
+      pt: 'Não, obrigado',
     },
     {
       en: 'Where is a bathroom?',
