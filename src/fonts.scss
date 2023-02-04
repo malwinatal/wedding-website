@@ -1,6 +1,18 @@
 @font-face {
   font-family: fife;
-  src: url(assets/fonts/FifeGallery.otf) format("opentype");
+  src: url(assets/fonts/FifeGallery.otf) format("opentype"),
+       url(assets/fonts/FifeGallery.ttf) format("truetype"),
+       url(assets/fonts/FifeGallery.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RetroSignature;
+  src: url(assets/fonts/RetroSignature.otf) format("opentype");
+  //url(assets/fonts/Brominates.ttf) format("truetype");
+  //url(assets/fonts/Xiomy.otf) format("opentype");
+  //url(assets/fonts/Antro_Vectra_Bolder.otf) format("opentype");
+  //url(assets/fonts/Notera_PersonalUseOnly.ttf) format("truetype");
   font-display: swap;
 }
 

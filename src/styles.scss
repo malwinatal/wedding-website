@@ -16,8 +16,12 @@ $owca-color: #4a5d83;
 /* You can add global styles to this file, and also import other style files */
 body {
 
-    .fancy-font {
+    .fancy-font-main {
         font-family: fife, 'arial', sans-serif;
+    }
+
+    .fancy-font {
+        font-family: RetroSignature, 'arial', sans-serif;
     }
 
     // CHIPS
