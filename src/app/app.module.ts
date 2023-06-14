@@ -35,6 +35,7 @@ import { LanguagePickerComponent } from './language-picker/language-picker.compo
 import { TranslatorComponent } from './translator/translator.component';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { CoverComponent } from './cover/cover.component';
+import { MenuComponent } from './menu/menu.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -59,6 +60,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     LanguagePickerComponent,
     TranslatorComponent,
     CoverComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
