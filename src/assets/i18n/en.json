@@ -60,6 +60,14 @@
     "SOUP": "Night soup",
     "END": "The end"
   },
+  "MENU": {
+    "TITLE": "Menu",
+    "SOUP": "Soup",
+    "MAIN": "Main dish",
+    "DESSERT": "Dessert",
+    "GRILL": "Grill",
+    "WODKA": "Drinks and wodka are available in the bar."
+  },
   "PICTURES": {
     "TITLE": "Pictures",
     "AVAILABLE": "Pictures from the wedding will be available here."
