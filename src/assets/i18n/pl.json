@@ -60,6 +60,41 @@
       "SOUP": "Zupa nocna",
       "END": "Koniec"
     },
+    "MENU": {
+      "TITLE": "Menu",
+      "SOUP": {
+        "TITLE": "Zupa",
+        "TOMATO": "Zupa krem z pieczonych pomidorów z focaccią",
+        "CHICKEN": "Bulion z trzech mięs z domowym makaronem"
+      },
+      "MAIN": {
+        "TITLE": "Danie główne",
+        "DUCK": "Polędwica wieprzowa z pieczonymi pomidorkami koktajlowymi w bazyliowej oliwie i czosnku podana z młodymi ziemniakami, gzikiem i ze świeżymi liśćmi  szpinaku z sosem vinegret",
+        "PIG": "Confit z kaczki w towarzystwie pysznej gratin z batatów podane z młodymi buraczkami w balsamico i miodzie i z sałatą z prażonymi orzechami włoskimi",
+        "VEGE": "Kopytka z oliwą szałwiową podane z papardele z młodych marchewek w tymianku i miodzie i z sałatą z vinegret"
+      },
+      "DESSERT": {
+        "TITLE": "Deser",
+        "PANACOTA": "Panna cotta waniliowa z konfiturą"
+      },
+      "GRILL": {
+        "TITLE": "Grill",
+        "BAO_CHICKEN": "Bułeczki bao z marynowanym kurczakiem",
+        "BAO_SEITAN": "Bułeczki bao z seitanem",
+        "BAO_CHILI": "Bułeczki bao z chili con carne",
+        "RIBS": "Żeberka koreańskie",
+        "DICK": "Kiełbasa",
+        "PIEROGI": "Pierogi z ziemniakami, cebulą i tofu",
+        "VEGGIES": "Warzywa grillowane z ziołami",
+        "FRITTERS": "Placki z cukinii",
+        "CARROTS": "Grillowane marchewki z miodem i chili",
+        "CELERY": "Grillowane selery z pesto orzechowym ",
+        "MUSHROOMS": "Pieczarki z oliwą ziołową",
+        "POTATOS": "Bataty"
+      },
+      "WODKA": "Drinki i wódka będą dostępne w barze.",
+      "OR": "lub"
+    },
     "PICTURES": {
       "TITLE": "Zdjęcia",
       "AVAILABLE": "Zdjęcia z wesela będą dostępne tutaj."

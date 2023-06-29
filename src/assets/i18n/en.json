@@ -64,35 +64,35 @@
     "TITLE": "Menu",
     "SOUP": {
       "TITLE": "Soup",
-      "TOMATO": "Zupa krem z pieczonych pomidorów",
-      "CHICKEN": "Bulion z trzech mięs z domowym makaronem"
+      "TOMATO": "Creamy roasted tomato soup with focaccia",
+      "CHICKEN": "Three meat broth with homemade noodles"
     },
     "MAIN": {
       "TITLE": "Main dish",
-      "DUCK": "Polędwica wieprzowa z pieczonymi pomidorkami koktajlowymi w bazyliowej oliwie i czosnku podana z młodymi ziemniakami, gzikiem i ze świeżymi liścmi szpinaku z sosem vinegre",
-      "PIG": "Confit z kaczki w towarzystwie pysznej gratin z batatów podane z młodymi buraczkami w balsamico i miodzie i z sałatą z prazonymi orzechami włoskimi",
-      "VEGE": "Kopytka z oliwą szałwiową podane z papardele z młodych marchewek w tymianku i miodzie i z sałatą z vinegre"
+      "DUCK": "Pork tenderloin with roasted cherry tomatoes in basil olive oil and garlic, served with young potatoes, gzik (polish cottage cheese dip) and fresh spinach leaves with vinaigrette dressing",
+      "PIG": "Duck confit accompanied by a delicious sweet potato gratin served with young beetroots in balsamic and honey dressing and lettuce with roasted walnuts",
+      "VEGE": "Kopytka (polish dumplings) with sage oil served with pappardelle of young carrots in thyme and honey and lettuce with vinaigrette dressing"
     },
     "DESSERT": {
       "TITLE": "Dessert",
-      "PANACOTA": "Pana cotta waniliowa z konfiturą"
+      "PANACOTA": "Vanilla panna cotta"
     },
     "GRILL": {
       "TITLE": "Grill",
-      "BAO_CHICKEN": "Bułeczki bao z marynowanym kurczakiem",
-      "BAO_SEITAN": "Bułeczki bao z seitanem",
-      "BAO_CHILI": "Bułeczki bao z chili con carne",
-      "RIBS": "Żeberka koreańskie",
-      "DICK": "Kiełbasa",
-      "PIEROGI": "Pierogi z ziemniakami, cebulą i tofu",
-      "VEGGIES": "Warzywa grillowane z ziołami",
-      "FRITTERS": "Placki z cukinii",
-      "CARROTS": "Grillowane marchewki z miodem i chili",
-      "CELERY": "Grillowane selery z pesto orzechowym ",
-      "MUSHROOMS": "Pieczarki z oliwą ziołową",
-      "POTATOS": "Bataty"
+      "BAO_CHICKEN": "Bao buns with chicken",
+      "BAO_SEITAN": "Bao buns with seitan",
+      "BAO_CHILI": "Bao buns with chilli con carne",
+      "RIBS": "Korean BBQ ribs",
+      "DICK": "Sausage",
+      "PIEROGI": "Pierogi with potatoes, onions and tofu",
+      "VEGGIES": "Grilled vegetables with herbs",
+      "FRITTERS": "Zucchini fritters",
+      "CARROTS": "Grilled carrots with honey and chilli",
+      "CELERY": "Grilled celery with peanut pesto",
+      "MUSHROOMS": "Mushrooms with herbal oil",
+      "POTATOS": "Sweet potatoes"
     },
-    "WODKA": "Drinks and wodka are available in the bar.",
+    "WODKA": "Drinks and vodka are available in the bar.",
     "OR": "or"
   },
   "PICTURES": {
