@@ -60,6 +60,41 @@
     "SOUP": "Sopa nocturna",
     "END": "Fim"
   },
+  "MENU": {
+    "TITLE": "Menú",
+    "SOUP": {
+      "TITLE": "Sopa",
+      "TOMATO": "Sopa cremosa de tomate assado com focaccia",
+      "CHICKEN": "Canja de três carnes com macarrão caseiro"
+    },
+    "MAIN": {
+      "TITLE": "Prato principal",
+      "DUCK": "Lombo de porco com tomate cereja assado em azeite de manjericão e alho, servido com batata nova, gzik (molho de requeijão polaco) e folhas de espinafre fresco com molho vinagrete",
+      "PIG": "Confit de pato acompanhado de um delicioso gratinado de batata-doce servido com beterraba em molho balsâmico e mel, e alface com nozes torradas",
+      "VEGE": "Kopytka (dumplings polacos) com azeite de sálvia servido com pappardelle de cenouras jovens em tomilho e mel, e alface com molho vinagrete"
+    },
+    "DESSERT": {
+      "TITLE": "Sobremesa",
+      "PANACOTA": "Panna cotta de baunilha"
+    },
+    "GRILL": {
+      "TITLE": "Grelhados",
+      "BAO_CHICKEN": "Pães Bao com frango",
+      "BAO_SEITAN": "Pães Bao com seitan",
+      "BAO_CHILI": "Pães Bao com chilli com carne",
+      "RIBS": "Costeletas BBQ coreanas",
+      "DICK": "Salsichas",
+      "PIEROGI": "Pierogi de batata, cebola e tofu",
+      "VEGGIES": "Vegetais grelhados com ervas",
+      "FRITTERS": "Frituras de courgette",
+      "CARROTS": "Cenouras grelhadas com mel e pimenta",
+      "CELERY": "Aipo grelhado com pesto de amendoim",
+      "MUSHROOMS": "Cogumelos com óleo de ervas",
+      "POTATOS": "Batata doce"
+    },
+    "WODKA": "Bebidas e vodka estão disponíveis no bar.",
+    "OR": "ou"
+  },
   "PICTURES": {
     "TITLE": "Fotos",
     "AVAILABLE": "Fotos do casamento ficarão disponíveis aqui."
