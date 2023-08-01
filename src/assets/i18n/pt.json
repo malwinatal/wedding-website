@@ -97,7 +97,11 @@
   },
   "PICTURES": {
     "TITLE": "Fotos",
-    "AVAILABLE": "Fotos do casamento ficarão disponíveis aqui."
+    "OWCA": "Fotografias da nossa fantástica bruxa de honra Anna disponíveis abaixo!",
+    "MAGIC_LINK": "Ir para Magic Flash",
+    "ANETA": "Ainda estamos à espera das belíssimas fotos de casamento da nossa fotógrafa Aneta.",
+    "SHARE": "Entretanto, se quiserem partilhar conosco algumas das fotos que tiraram, por favor adicionem-nas aqui!",
+    "DRIVE_LINK": "Ir para Google Drive"
   },
   "TRANSLATOR": {
     "TITLE": "Pequeno tradutor"
