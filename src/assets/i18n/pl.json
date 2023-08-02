@@ -97,7 +97,11 @@
     },
     "PICTURES": {
       "TITLE": "Zdjęcia",
-      "AVAILABLE": "Zdjęcia z wesela będą dostępne tutaj."
+      "OWCA": "Zdjęcia od naszej niesamowitej świadkowej i fotograf Anny są dostępne poniżej!",
+      "MAGIC_LINK": "Przejdź do Magic Flash",
+      "ANETA": "Cięgle czekamy na więcej pięknych zdjęć ślubnych od naszej fotograf Anety.",
+      "SHARE": "W międzyczasie jeżeli ktoś chciałby podzielić się z nami zdjęciami prosimy o dodanie ich tutaj.",
+      "DRIVE_LINK": "Przejdź do Google Drive"
     },
     "TRANSLATOR": {
       "TITLE": "Słowniczek"
