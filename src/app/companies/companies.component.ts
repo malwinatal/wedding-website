@@ -33,6 +33,11 @@ export class CompaniesComponent implements OnInit, AfterViewInit {
       "name": "Platinium Visage",
       "image": "../../assets/images/logos/platiniumvisage.png",
       "web": "https://platiniumvisage.pl"
+    },
+    {
+      "name": "DJ nova-Q",
+      "image": "../../assets/images/logos/novaq.jpeg",
+      "web": "http://www.nova-q.pl"
     }
   ];
 
