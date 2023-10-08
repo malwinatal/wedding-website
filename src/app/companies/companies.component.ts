@@ -28,6 +28,11 @@ export class CompaniesComponent implements OnInit, AfterViewInit {
       "name": "Aneta Siemieniuk Fotografia",
       "image": "../../assets/images/logos/anetafotografia.jpeg",
       "web": "https://www.facebook.com/aneta.siemieniuk.fotografia"
+    },
+    {
+      "name": "Platinium Visage",
+      "image": "../../assets/images/logos/platiniumvisage.png",
+      "web": "https://platiniumvisage.pl"
     }
   ];
 
