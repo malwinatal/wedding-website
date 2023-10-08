@@ -99,8 +99,10 @@
     "TITLE": "Pictures",
     "OWCA": "Photos from our amazing witch of honor and photographer Anna available below!",
     "MAGIC_LINK": "Go to Magic Flash",
-    "ANETA": "We're still waiting for more beautiful wedding photos from our fotographer Aneta.",
-    "SHARE": "In the meantime if you would like to share some pictures with us, please add them here!",
+    "ANETA": "Photos from our great photographer Aneta available below!",
+    "ANETA_LINK": "Go to gallery",
+    "ANETA_DOWNLOAD": "Download photos",
+    "SHARE": "If you would like to share some pictures from the event with us, please add them here!",
     "DRIVE_LINK": "Go to Google Drive"
   },
   "TRANSLATOR": {

@@ -97,10 +97,12 @@
     },
     "PICTURES": {
       "TITLE": "Zdjęcia",
-      "OWCA": "Zdjęcia od naszej niesamowitej świadkowej i fotograf Anny są dostępne poniżej!",
+      "OWCA": "Zdjęcia od naszej niesamowitej świadkowej i fotograf Ani są dostępne poniżej!",
       "MAGIC_LINK": "Przejdź do Magic Flash",
-      "ANETA": "Cięgle czekamy na więcej pięknych zdjęć ślubnych od naszej fotograf Anety.",
-      "SHARE": "W międzyczasie jeżeli ktoś chciałby podzielić się z nami zdjęciami prosimy o dodanie ich tutaj.",
+      "ANETA": "Zdjęcia od naszej super fotograf Anety są dostępne poniżej.",
+      "ANETA_LINK": "Przejdź do galerii",
+      "ANETA_DOWNLOAD": "Pobierz zdjęcia",
+      "SHARE": "Jeżeli ktoś chciałby się podzielić zdjęciami prosimy o dodanie ich tutaj.",
       "DRIVE_LINK": "Przejdź do Google Drive"
     },
     "TRANSLATOR": {
