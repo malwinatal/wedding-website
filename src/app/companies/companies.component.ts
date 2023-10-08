@@ -23,6 +23,11 @@ export class CompaniesComponent implements OnInit, AfterViewInit {
       "name": "Oczyszczalnia Miejsce",
       "image": "../../assets/images/logos/oczyszczalnia.png",
       "web": "https://oczyszczalniamiejsce.pl"
+    },
+    {
+      "name": "Aneta Siemieniuk Fotografia",
+      "image": "../../assets/images/logos/anetafotografia.jpeg",
+      "web": "https://www.facebook.com/aneta.siemieniuk.fotografia"
     }
   ];
 
