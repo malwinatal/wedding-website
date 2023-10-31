@@ -35,6 +35,16 @@ export class CompaniesComponent implements OnInit, AfterViewInit {
       "web": "https://platiniumvisage.pl"
     },
     {
+      "name": "Novaflora",
+      "image": "../../assets/images/logos/novaflora.png",
+      "web": "https://www.novaflora.pl"
+    },
+    {
+      "name": "Eter",
+      "image": "../../assets/images/logos/eter.png",
+      "web": "https://eterveganbakery.pl"
+    },
+    {
       "name": "DJ nova-Q",
       "image": "../../assets/images/logos/novaq.jpeg",
       "web": "http://www.nova-q.pl"
